@@ -16,6 +16,35 @@
 		2D635E8A29FC311200F4B49B /* FooManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E8929FC311200F4B49B /* FooManagementTests.swift */; };
 		2D635E9429FC311200F4B49B /* FooManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E9329FC311200F4B49B /* FooManagementUITests.swift */; };
 		2D635E9629FC311200F4B49B /* FooManagementUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E9529FC311200F4B49B /* FooManagementUITestsLaunchTests.swift */; };
+		2D635EA429FC331D00F4B49B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7629FC311100F4B49B /* ViewController.swift */; };
+		2D635EA529FC331D00F4B49B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7229FC311100F4B49B /* AppDelegate.swift */; };
+		2D635EA629FC331D00F4B49B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7429FC311100F4B49B /* SceneDelegate.swift */; };
+		2D635EA929FC331D00F4B49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D635E7D29FC311200F4B49B /* LaunchScreen.storyboard */; };
+		2D635EAA29FC331D00F4B49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D635E7B29FC311200F4B49B /* Assets.xcassets */; };
+		2D635EAB29FC331D00F4B49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D635E7829FC311100F4B49B /* Main.storyboard */; };
+		2D635EB329FC334000F4B49B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7629FC311100F4B49B /* ViewController.swift */; };
+		2D635EB429FC334000F4B49B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7229FC311100F4B49B /* AppDelegate.swift */; };
+		2D635EB529FC334000F4B49B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7429FC311100F4B49B /* SceneDelegate.swift */; };
+		2D635EB829FC334000F4B49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D635E7D29FC311200F4B49B /* LaunchScreen.storyboard */; };
+		2D635EB929FC334000F4B49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D635E7B29FC311200F4B49B /* Assets.xcassets */; };
+		2D635EBA29FC334000F4B49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D635E7829FC311100F4B49B /* Main.storyboard */; };
+		2D635EC529FC368D00F4B49B /* EnvironmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635EC429FC368D00F4B49B /* EnvironmentManager.swift */; };
+		2D635EC629FC368D00F4B49B /* EnvironmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635EC429FC368D00F4B49B /* EnvironmentManager.swift */; };
+		2D635EC729FC368D00F4B49B /* EnvironmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635EC429FC368D00F4B49B /* EnvironmentManager.swift */; };
+		2D635ECA29FC36B200F4B49B /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635EC929FC36B200F4B49B /* Strings.swift */; };
+		2D635ECB29FC36B200F4B49B /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635EC929FC36B200F4B49B /* Strings.swift */; };
+		2D635ECC29FC36B200F4B49B /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635EC929FC36B200F4B49B /* Strings.swift */; };
+		2D635ECE29FC370700F4B49B /* EnvironmentVariables.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D635ECD29FC370700F4B49B /* EnvironmentVariables.plist */; };
+		2D635ECF29FC370700F4B49B /* EnvironmentVariables.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D635ECD29FC370700F4B49B /* EnvironmentVariables.plist */; };
+		2D635ED029FC370700F4B49B /* EnvironmentVariables.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D635ECD29FC370700F4B49B /* EnvironmentVariables.plist */; };
+		2D635ED129FC39B900F4B49B /* EnvironmentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635EC429FC368D00F4B49B /* EnvironmentManager.swift */; };
+		2D635ED229FC39C000F4B49B /* EnvironmentVariables.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D635ECD29FC370700F4B49B /* EnvironmentVariables.plist */; };
+		2D635ED329FC39CF00F4B49B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7229FC311100F4B49B /* AppDelegate.swift */; };
+		2D635ED429FC39CF00F4B49B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7429FC311100F4B49B /* SceneDelegate.swift */; };
+		2D635ED529FC39CF00F4B49B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7629FC311100F4B49B /* ViewController.swift */; };
+		2D635ED629FC39D600F4B49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D635E7D29FC311200F4B49B /* LaunchScreen.storyboard */; };
+		2D635ED729FC39D900F4B49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D635E7829FC311100F4B49B /* Main.storyboard */; };
+		2D635ED829FC39E000F4B49B /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635EC929FC36B200F4B49B /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +78,13 @@
 		2D635E8F29FC311200F4B49B /* FooManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FooManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D635E9329FC311200F4B49B /* FooManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooManagementUITests.swift; sourceTree = "<group>"; };
 		2D635E9529FC311200F4B49B /* FooManagementUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooManagementUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2D635EAF29FC331D00F4B49B /* FooManagement-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FooManagement-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D635EB029FC331D00F4B49B /* FooManagement-Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FooManagement-Dev-Info.plist"; path = "/Users/oz/Desktop/FooManagement/FooManagement-Dev-Info.plist"; sourceTree = "<absolute>"; };
+		2D635EBE29FC334000F4B49B /* FooManagement-Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FooManagement-Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D635EBF29FC334000F4B49B /* FooManagement-Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FooManagement-Staging-Info.plist"; path = "/Users/oz/Desktop/FooManagement/FooManagement-Staging-Info.plist"; sourceTree = "<absolute>"; };
+		2D635EC429FC368D00F4B49B /* EnvironmentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentManager.swift; sourceTree = "<group>"; };
+		2D635EC929FC36B200F4B49B /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		2D635ECD29FC370700F4B49B /* EnvironmentVariables.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EnvironmentVariables.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +103,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2D635E8C29FC311200F4B49B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D635EA729FC331D00F4B49B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D635EB629FC334000F4B49B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,6 +142,8 @@
 				2D635E6F29FC311100F4B49B /* FooManagement.app */,
 				2D635E8529FC311200F4B49B /* FooManagementTests.xctest */,
 				2D635E8F29FC311200F4B49B /* FooManagementUITests.xctest */,
+				2D635EAF29FC331D00F4B49B /* FooManagement-Dev.app */,
+				2D635EBE29FC334000F4B49B /* FooManagement-Staging.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,13 +151,14 @@
 		2D635E7129FC311100F4B49B /* FooManagement */ = {
 			isa = PBXGroup;
 			children = (
+				2D635EC229FC367300F4B49B /* Core */,
+				2D635EC829FC36A200F4B49B /* Misc */,
+				2D635EC029FC33AC00F4B49B /* Resources */,
 				2D635E7229FC311100F4B49B /* AppDelegate.swift */,
 				2D635E7429FC311100F4B49B /* SceneDelegate.swift */,
 				2D635E7629FC311100F4B49B /* ViewController.swift */,
 				2D635E7829FC311100F4B49B /* Main.storyboard */,
-				2D635E7B29FC311200F4B49B /* Assets.xcassets */,
 				2D635E7D29FC311200F4B49B /* LaunchScreen.storyboard */,
-				2D635E8029FC311200F4B49B /* Info.plist */,
 			);
 			path = FooManagement;
 			sourceTree = "<group>";
@@ -125,6 +178,50 @@
 				2D635E9529FC311200F4B49B /* FooManagementUITestsLaunchTests.swift */,
 			);
 			path = FooManagementUITests;
+			sourceTree = "<group>";
+		};
+		2D635EC029FC33AC00F4B49B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D635EC129FC33C600F4B49B /* InfoPlists */,
+				2D635E7B29FC311200F4B49B /* Assets.xcassets */,
+				2D635ECD29FC370700F4B49B /* EnvironmentVariables.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2D635EC129FC33C600F4B49B /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				2D635E8029FC311200F4B49B /* Info.plist */,
+				2D635EB029FC331D00F4B49B /* FooManagement-Dev-Info.plist */,
+				2D635EBF29FC334000F4B49B /* FooManagement-Staging-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		2D635EC229FC367300F4B49B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2D635EC329FC367800F4B49B /* System */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2D635EC329FC367800F4B49B /* System */ = {
+			isa = PBXGroup;
+			children = (
+				2D635EC429FC368D00F4B49B /* EnvironmentManager.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		2D635EC829FC36A200F4B49B /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				2D635EC929FC36B200F4B49B /* Strings.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +280,40 @@
 			productReference = 2D635E8F29FC311200F4B49B /* FooManagementUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		2D635EA229FC331D00F4B49B /* FooManagement-Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D635EAC29FC331D00F4B49B /* Build configuration list for PBXNativeTarget "FooManagement-Dev" */;
+			buildPhases = (
+				2D635EA329FC331D00F4B49B /* Sources */,
+				2D635EA729FC331D00F4B49B /* Frameworks */,
+				2D635EA829FC331D00F4B49B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FooManagement-Dev";
+			productName = FooManagement;
+			productReference = 2D635EAF29FC331D00F4B49B /* FooManagement-Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D635EB129FC334000F4B49B /* FooManagement-Staging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D635EBB29FC334000F4B49B /* Build configuration list for PBXNativeTarget "FooManagement-Staging" */;
+			buildPhases = (
+				2D635EB229FC334000F4B49B /* Sources */,
+				2D635EB629FC334000F4B49B /* Frameworks */,
+				2D635EB729FC334000F4B49B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FooManagement-Staging";
+			productName = FooManagement;
+			productReference = 2D635EBE29FC334000F4B49B /* FooManagement-Staging.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -220,6 +351,8 @@
 			projectRoot = "";
 			targets = (
 				2D635E6E29FC311100F4B49B /* FooManagement */,
+				2D635EA229FC331D00F4B49B /* FooManagement-Dev */,
+				2D635EB129FC334000F4B49B /* FooManagement-Staging */,
 				2D635E8429FC311200F4B49B /* FooManagementTests */,
 				2D635E8E29FC311200F4B49B /* FooManagementUITests */,
 			);
@@ -233,6 +366,7 @@
 			files = (
 				2D635E7F29FC311200F4B49B /* LaunchScreen.storyboard in Resources */,
 				2D635E7C29FC311200F4B49B /* Assets.xcassets in Resources */,
+				2D635ECE29FC370700F4B49B /* EnvironmentVariables.plist in Resources */,
 				2D635E7A29FC311100F4B49B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +382,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D635ED729FC39D900F4B49B /* Main.storyboard in Resources */,
+				2D635ED229FC39C000F4B49B /* EnvironmentVariables.plist in Resources */,
+				2D635ED629FC39D600F4B49B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D635EA829FC331D00F4B49B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D635EA929FC331D00F4B49B /* LaunchScreen.storyboard in Resources */,
+				2D635EAA29FC331D00F4B49B /* Assets.xcassets in Resources */,
+				2D635ECF29FC370700F4B49B /* EnvironmentVariables.plist in Resources */,
+				2D635EAB29FC331D00F4B49B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D635EB729FC334000F4B49B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D635EB829FC334000F4B49B /* LaunchScreen.storyboard in Resources */,
+				2D635EB929FC334000F4B49B /* Assets.xcassets in Resources */,
+				2D635ED029FC370700F4B49B /* EnvironmentVariables.plist in Resources */,
+				2D635EBA29FC334000F4B49B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +419,9 @@
 			files = (
 				2D635E7729FC311100F4B49B /* ViewController.swift in Sources */,
 				2D635E7329FC311100F4B49B /* AppDelegate.swift in Sources */,
+				2D635ECA29FC36B200F4B49B /* Strings.swift in Sources */,
 				2D635E7529FC311100F4B49B /* SceneDelegate.swift in Sources */,
+				2D635EC529FC368D00F4B49B /* EnvironmentManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +437,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D635ED529FC39CF00F4B49B /* ViewController.swift in Sources */,
+				2D635ED429FC39CF00F4B49B /* SceneDelegate.swift in Sources */,
+				2D635ED329FC39CF00F4B49B /* AppDelegate.swift in Sources */,
 				2D635E9629FC311200F4B49B /* FooManagementUITestsLaunchTests.swift in Sources */,
+				2D635ED129FC39B900F4B49B /* EnvironmentManager.swift in Sources */,
 				2D635E9429FC311200F4B49B /* FooManagementUITests.swift in Sources */,
+				2D635ED829FC39E000F4B49B /* Strings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D635EA329FC331D00F4B49B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D635EA429FC331D00F4B49B /* ViewController.swift in Sources */,
+				2D635EA529FC331D00F4B49B /* AppDelegate.swift in Sources */,
+				2D635ECB29FC36B200F4B49B /* Strings.swift in Sources */,
+				2D635EA629FC331D00F4B49B /* SceneDelegate.swift in Sources */,
+				2D635EC629FC368D00F4B49B /* EnvironmentManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D635EB229FC334000F4B49B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D635EB329FC334000F4B49B /* ViewController.swift in Sources */,
+				2D635EB429FC334000F4B49B /* AppDelegate.swift in Sources */,
+				2D635ECC29FC36B200F4B49B /* Strings.swift in Sources */,
+				2D635EB529FC334000F4B49B /* SceneDelegate.swift in Sources */,
+				2D635EC729FC368D00F4B49B /* EnvironmentManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +629,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FooManagement/Info.plist;
+				INFOPLIST_FILE = /Users/oz/Desktop/FooManagement/FooManagement/Resources/InfoPlists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +657,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FooManagement/Info.plist;
+				INFOPLIST_FILE = /Users/oz/Desktop/FooManagement/FooManagement/Resources/InfoPlists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -562,6 +752,300 @@
 			};
 			name = Release;
 		};
+		2D635EAD29FC331D00F4B49B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/oz/Desktop/FooManagement/FooManagement-Dev-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.FooManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D635EAE29FC331D00F4B49B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/oz/Desktop/FooManagement/FooManagement-Dev-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.FooManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D635EBC29FC334000F4B49B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/oz/Desktop/FooManagement/FooManagement-Staging-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.FooManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D635EBD29FC334000F4B49B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/oz/Desktop/FooManagement/FooManagement-Staging-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.FooManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D635ED929FC3DA700F4B49B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		2D635EDA29FC3DA700F4B49B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = /Users/oz/Desktop/FooManagement/FooManagement/Resources/InfoPlists/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.FooManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		2D635EDB29FC3DA700F4B49B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/oz/Desktop/FooManagement/FooManagement-Dev-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.FooManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		2D635EDC29FC3DA700F4B49B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/oz/Desktop/FooManagement/FooManagement-Staging-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.FooManagement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		2D635EDD29FC3DA700F4B49B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.FooManagementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FooManagement.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FooManagement";
+			};
+			name = Staging;
+		};
+		2D635EDE29FC3DA700F4B49B /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YQ3FVUF368;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oz.FooManagementUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FooManagement;
+			};
+			name = Staging;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,6 +1053,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D635E9729FC311200F4B49B /* Debug */,
+				2D635ED929FC3DA700F4B49B /* Staging */,
 				2D635E9829FC311200F4B49B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -578,6 +1063,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D635E9A29FC311200F4B49B /* Debug */,
+				2D635EDA29FC3DA700F4B49B /* Staging */,
 				2D635E9B29FC311200F4B49B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -587,6 +1073,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D635E9D29FC311200F4B49B /* Debug */,
+				2D635EDD29FC3DA700F4B49B /* Staging */,
 				2D635E9E29FC311200F4B49B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -596,7 +1083,28 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D635EA029FC311200F4B49B /* Debug */,
+				2D635EDE29FC3DA700F4B49B /* Staging */,
 				2D635EA129FC311200F4B49B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D635EAC29FC331D00F4B49B /* Build configuration list for PBXNativeTarget "FooManagement-Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D635EAD29FC331D00F4B49B /* Debug */,
+				2D635EDB29FC3DA700F4B49B /* Staging */,
+				2D635EAE29FC331D00F4B49B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D635EBB29FC334000F4B49B /* Build configuration list for PBXNativeTarget "FooManagement-Staging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D635EBC29FC334000F4B49B /* Debug */,
+				2D635EDC29FC3DA700F4B49B /* Staging */,
+				2D635EBD29FC334000F4B49B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
