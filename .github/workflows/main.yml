@@ -16,7 +16,7 @@ jobs:
     runs-on: macOS-latest
     steps:
     - name: Checkout project
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
 #     - name: Install CocoaPods
 #       run: |
 #         gem install cocoapods
