@@ -20,6 +20,34 @@
                ReferencedContainer = "container:FooManagement.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2D635E8429FC311200F4B49B"
+               BuildableName = "FooManagementTests.xctest"
+               BlueprintName = "FooManagementTests"
+               ReferencedContainer = "container:FooManagement.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2D635E8E29FC311200F4B49B"
+               BuildableName = "FooManagementUITests.xctest"
+               BlueprintName = "FooManagementUITests"
+               ReferencedContainer = "container:FooManagement.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,6 +56,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2D635E8429FC311200F4B49B"
+               BuildableName = "FooManagementTests.xctest"
+               BlueprintName = "FooManagementTests"
+               ReferencedContainer = "container:FooManagement.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2D635E8E29FC311200F4B49B"
+               BuildableName = "FooManagementUITests.xctest"
+               BlueprintName = "FooManagementUITests"
+               ReferencedContainer = "container:FooManagement.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
