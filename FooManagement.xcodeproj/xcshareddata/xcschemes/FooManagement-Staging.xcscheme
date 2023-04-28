@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2D635EA229FC331D00F4B49B"
-               BuildableName = "FooManagement-Dev.app"
-               BlueprintName = "FooManagement-Dev"
+               BlueprintIdentifier = "2D635EB129FC334000F4B49B"
+               BuildableName = "FooManagement-Staging.app"
+               BlueprintName = "FooManagement-Staging"
                ReferencedContainer = "container:FooManagement.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D635EA229FC331D00F4B49B"
-            BuildableName = "FooManagement-Dev.app"
-            BlueprintName = "FooManagement-Dev"
+            BlueprintIdentifier = "2D635EB129FC334000F4B49B"
+            BuildableName = "FooManagement-Staging.app"
+            BlueprintName = "FooManagement-Staging"
             ReferencedContainer = "container:FooManagement.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -57,16 +57,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D635EA229FC331D00F4B49B"
-            BuildableName = "FooManagement-Dev.app"
-            BlueprintName = "FooManagement-Dev"
+            BlueprintIdentifier = "2D635EB129FC334000F4B49B"
+            BuildableName = "FooManagement-Staging.app"
+            BlueprintName = "FooManagement-Staging"
             ReferencedContainer = "container:FooManagement.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
