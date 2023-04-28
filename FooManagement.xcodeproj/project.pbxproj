@@ -79,12 +79,12 @@
 		2D635E9329FC311200F4B49B /* FooManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooManagementUITests.swift; sourceTree = "<group>"; };
 		2D635E9529FC311200F4B49B /* FooManagementUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooManagementUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2D635EAF29FC331D00F4B49B /* FooManagement-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FooManagement-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D635EB029FC331D00F4B49B /* FooManagement-Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FooManagement-Dev-Info.plist"; path = "/Users/oz/Desktop/FooManagement/FooManagement-Dev-Info.plist"; sourceTree = "<absolute>"; };
 		2D635EBE29FC334000F4B49B /* FooManagement-Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FooManagement-Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D635EBF29FC334000F4B49B /* FooManagement-Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FooManagement-Staging-Info.plist"; path = "/Users/oz/Desktop/FooManagement/FooManagement-Staging-Info.plist"; sourceTree = "<absolute>"; };
 		2D635EC429FC368D00F4B49B /* EnvironmentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentManager.swift; sourceTree = "<group>"; };
 		2D635EC929FC36B200F4B49B /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		2D635ECD29FC370700F4B49B /* EnvironmentVariables.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EnvironmentVariables.plist; sourceTree = "<group>"; };
+		2D635EDF29FC42B400F4B49B /* FooManagement-Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FooManagement-Dev-Info.plist"; sourceTree = "<group>"; };
+		2D635EE029FC42B400F4B49B /* FooManagement-Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FooManagement-Staging-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				2D635E8029FC311200F4B49B /* Info.plist */,
-				2D635EB029FC331D00F4B49B /* FooManagement-Dev-Info.plist */,
-				2D635EBF29FC334000F4B49B /* FooManagement-Staging-Info.plist */,
+				2D635EDF29FC42B400F4B49B /* FooManagement-Dev-Info.plist */,
+				2D635EE029FC42B400F4B49B /* FooManagement-Staging-Info.plist */,
 			);
 			path = InfoPlists;
 			sourceTree = "<group>";
@@ -351,8 +351,8 @@
 			projectRoot = "";
 			targets = (
 				2D635E6E29FC311100F4B49B /* FooManagement */,
-				2D635EA229FC331D00F4B49B /* FooManagement-Dev */,
 				2D635EB129FC334000F4B49B /* FooManagement-Staging */,
+				2D635EA229FC331D00F4B49B /* FooManagement-Dev */,
 				2D635E8429FC311200F4B49B /* FooManagementTests */,
 				2D635E8E29FC311200F4B49B /* FooManagementUITests */,
 			);
@@ -629,7 +629,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = /Users/oz/Desktop/FooManagement/FooManagement/Resources/InfoPlists/Info.plist;
+				INFOPLIST_FILE = FooManagement/Resources/InfoPlists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -657,7 +657,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = /Users/oz/Desktop/FooManagement/FooManagement/Resources/InfoPlists/Info.plist;
+				INFOPLIST_FILE = FooManagement/Resources/InfoPlists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -761,7 +761,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "/Users/oz/Desktop/FooManagement/FooManagement-Dev-Info.plist";
+				INFOPLIST_FILE = "FooManagement/Resources/InfoPlists/FooManagement-Dev-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -789,7 +789,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "/Users/oz/Desktop/FooManagement/FooManagement-Dev-Info.plist";
+				INFOPLIST_FILE = "FooManagement/Resources/InfoPlists/FooManagement-Dev-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -817,7 +817,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "/Users/oz/Desktop/FooManagement/FooManagement-Staging-Info.plist";
+				INFOPLIST_FILE = "FooManagement/Resources/InfoPlists/FooManagement-Staging-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -845,7 +845,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "/Users/oz/Desktop/FooManagement/FooManagement-Staging-Info.plist";
+				INFOPLIST_FILE = "FooManagement/Resources/InfoPlists/FooManagement-Staging-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -933,7 +933,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = /Users/oz/Desktop/FooManagement/FooManagement/Resources/InfoPlists/Info.plist;
+				INFOPLIST_FILE = FooManagement/Resources/InfoPlists/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -961,7 +961,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "/Users/oz/Desktop/FooManagement/FooManagement-Dev-Info.plist";
+				INFOPLIST_FILE = "FooManagement/Resources/InfoPlists/FooManagement-Dev-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -989,7 +989,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "/Users/oz/Desktop/FooManagement/FooManagement-Staging-Info.plist";
+				INFOPLIST_FILE = "FooManagement/Resources/InfoPlists/FooManagement-Staging-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
