@@ -10,8 +10,8 @@ import Foundation
 class ServicesFactory {
     static let shared = ServicesFactory()
 
-    func makeTestNetworkService() -> TestNetworkServiceProtocol {
-        return TestNetworkService(networkingManager: makeNetworkService(), keychainService: makeKeychainService())
+    func makeExampleNetworkService() -> ExampleNetworkServiceProtocol {
+        return ExampleNetworkService(networkingManager: makeNetworkService(), keychainService: makeKeychainService())
     }
 
     func makeKeychainService() -> KeychainProtocol {

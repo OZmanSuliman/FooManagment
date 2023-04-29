@@ -16,6 +16,13 @@ enum Strings: String {
     case environmentVariablesPlist = "EnvironmentVariables.plist"
     case unableToLoadPLIST = "Unable to load PLIST at path: %@"
     case PropertyNotOfType = "Property %@ is not of type %@"
+    case unauthorized
+    case serverError = "Server Error %@"
+    case requestTimedOut
+    case invalidResponse
+    case invalidServerURL
+    case networkIssue = "Network Not Available"
+    case appStateSerialQueue
     
     func fullString(withParameters parameters: CVarArg...) -> String {
         var str = rawValue
