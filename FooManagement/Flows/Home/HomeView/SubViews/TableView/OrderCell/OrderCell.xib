@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="bRS-fg-ybE" customClass="OrderCell" customModule="FooManagement" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bRS-fg-ybE" id="8E4-2M-QTe">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oi2-cE-k6D">
+                        <rect key="frame" x="23" y="16" width="347" height="33"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Strawberry-Milkshake.pg" translatesAutoresizingMaskIntoConstraints="NO" id="xIT-gW-bc4">
+                                <rect key="frame" x="0.0" y="0.0" width="56" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="8iL-Ua-xwt"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kkh-M0-fOf">
+                                <rect key="frame" x="64" y="0.0" width="185" height="33"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVl-c8-8aO">
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="16.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIQ-i0-1bO">
+                                        <rect key="frame" x="0.0" y="16.666666666666664" width="185" height="16.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVF-Ww-pfh">
+                                <rect key="frame" x="257" y="0.0" width="90" height="33"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVs-cf-pP7" customClass="StatusView" customModule="FooManagement" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="3.6666666666666679" width="90" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="dwd-p5-VnX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NVs-cf-pP7" firstAttribute="centerY" secondItem="pVF-Ww-pfh" secondAttribute="centerY" id="51D-47-ZfZ"/>
+                                    <constraint firstItem="NVs-cf-pP7" firstAttribute="centerX" secondItem="pVF-Ww-pfh" secondAttribute="centerX" id="Pbh-xj-uw2"/>
+                                    <constraint firstAttribute="width" constant="90" id="haz-4D-X3m"/>
+                                    <constraint firstAttribute="trailing" secondItem="NVs-cf-pP7" secondAttribute="trailing" id="xYR-oo-G8c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oi2-cE-k6D" firstAttribute="top" secondItem="8E4-2M-QTe" secondAttribute="top" constant="16" id="7lv-Yt-5sj"/>
+                    <constraint firstAttribute="trailing" secondItem="oi2-cE-k6D" secondAttribute="trailing" constant="23" id="9WO-ty-v7E"/>
+                    <constraint firstItem="oi2-cE-k6D" firstAttribute="leading" secondItem="8E4-2M-QTe" secondAttribute="leading" constant="23" id="I7B-gY-4a0"/>
+                    <constraint firstAttribute="bottom" secondItem="oi2-cE-k6D" secondAttribute="bottom" constant="16" id="Kof-ei-R0u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="orderDescription" destination="OIQ-i0-1bO" id="KdM-7c-hVN"/>
+                <outlet property="orderImage" destination="xIT-gW-bc4" id="ZiU-Xo-Ifm"/>
+                <outlet property="orderName" destination="mVl-c8-8aO" id="HDP-cm-JfG"/>
+                <outlet property="orderStatus" destination="NVs-cf-pP7" id="Qcn-DB-0az"/>
+            </connections>
+            <point key="canvasLocation" x="148.85496183206106" y="25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Strawberry-Milkshake.pg" width="1200" height="800"/>
+    </resources>
+</document>

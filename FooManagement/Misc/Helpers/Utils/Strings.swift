@@ -23,7 +23,21 @@ enum Strings: String {
     case invalidServerURL
     case networkIssue = "Network Not Available"
     case appStateSerialQueue
-    
+
+    // colors
+    case Orange
+
+    // images
+    case HeaderBg = "Header-bg"
+    case plus
+    case StrawberryMilkshake = "Strawberry-Milkshake"
+
+    // Text
+    case Orders
+    case FooManagement = "Foo Management"
+    case createNewOrder = "Create new order"
+
+
     func fullString(withParameters parameters: CVarArg...) -> String {
         var str = rawValue
 
