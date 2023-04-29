@@ -45,6 +45,19 @@
 		2D635ED629FC39D600F4B49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D635E7D29FC311200F4B49B /* LaunchScreen.storyboard */; };
 		2D635ED729FC39D900F4B49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D635E7829FC311100F4B49B /* Main.storyboard */; };
 		2D635ED829FC39E000F4B49B /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635EC929FC36B200F4B49B /* Strings.swift */; };
+		2DEA13DF29FCEB4D00E76FED /* UserDefaultInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13DE29FCEB4D00E76FED /* UserDefaultInfo.swift */; };
+		2DEA13E229FCEB6900E76FED /* UserDefaultInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13DE29FCEB4D00E76FED /* UserDefaultInfo.swift */; };
+		2DEA13E429FCEB6900E76FED /* UserDefaultInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13DE29FCEB4D00E76FED /* UserDefaultInfo.swift */; };
+		2DEA13E629FCEB6A00E76FED /* UserDefaultInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13DE29FCEB4D00E76FED /* UserDefaultInfo.swift */; };
+		2DEA13EA29FCEB8600E76FED /* InternetObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13E929FCEB8600E76FED /* InternetObserver.swift */; };
+		2DEA13EB29FCEB8600E76FED /* InternetObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13E929FCEB8600E76FED /* InternetObserver.swift */; };
+		2DEA13EC29FCEB8600E76FED /* InternetObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13E929FCEB8600E76FED /* InternetObserver.swift */; };
+		2DEA13ED29FCEB8600E76FED /* InternetObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13E929FCEB8600E76FED /* InternetObserver.swift */; };
+		2DEA13F029FCEBBF00E76FED /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13EF29FCEBBF00E76FED /* NotificationNames.swift */; };
+		2DEA13F129FCEBBF00E76FED /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13EF29FCEBBF00E76FED /* NotificationNames.swift */; };
+		2DEA13F229FCEBBF00E76FED /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13EF29FCEBBF00E76FED /* NotificationNames.swift */; };
+		2DEA13F329FCEBBF00E76FED /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13EF29FCEBBF00E76FED /* NotificationNames.swift */; };
+		2DEA13F729FCEC1600E76FED /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA13F629FCEC1600E76FED /* Reachability */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +98,9 @@
 		2D635ECD29FC370700F4B49B /* EnvironmentVariables.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EnvironmentVariables.plist; sourceTree = "<group>"; };
 		2D635EDF29FC42B400F4B49B /* FooManagement-Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FooManagement-Dev-Info.plist"; sourceTree = "<group>"; };
 		2D635EE029FC42B400F4B49B /* FooManagement-Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FooManagement-Staging-Info.plist"; sourceTree = "<group>"; };
+		2DEA13DE29FCEB4D00E76FED /* UserDefaultInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultInfo.swift; sourceTree = "<group>"; };
+		2DEA13E929FCEB8600E76FED /* InternetObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetObserver.swift; sourceTree = "<group>"; };
+		2DEA13EF29FCEBBF00E76FED /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEA13F729FCEC1600E76FED /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,11 +171,8 @@
 				2D635EC229FC367300F4B49B /* Core */,
 				2D635EC829FC36A200F4B49B /* Misc */,
 				2D635EC029FC33AC00F4B49B /* Resources */,
-				2D635E7229FC311100F4B49B /* AppDelegate.swift */,
-				2D635E7429FC311100F4B49B /* SceneDelegate.swift */,
 				2D635E7629FC311100F4B49B /* ViewController.swift */,
 				2D635E7829FC311100F4B49B /* Main.storyboard */,
-				2D635E7D29FC311200F4B49B /* LaunchScreen.storyboard */,
 			);
 			path = FooManagement;
 			sourceTree = "<group>";
@@ -211,7 +225,8 @@
 		2D635EC329FC367800F4B49B /* System */ = {
 			isa = PBXGroup;
 			children = (
-				2D635EC429FC368D00F4B49B /* EnvironmentManager.swift */,
+				2D635E7229FC311100F4B49B /* AppDelegate.swift */,
+				2D635E7429FC311100F4B49B /* SceneDelegate.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -219,9 +234,46 @@
 		2D635EC829FC36A200F4B49B /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				2D635EC929FC36B200F4B49B /* Strings.swift */,
+				2DEA13DD29FCEB0E00E76FED /* Helpers */,
+				2D635E7D29FC311200F4B49B /* LaunchScreen.storyboard */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		2DEA13DD29FCEB0E00E76FED /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2DEA13F429FCEBE700E76FED /* Extensions */,
+				2DEA13EE29FCEBB000E76FED /* Utils */,
+				2DEA13E829FCEB7400E76FED /* Reachability */,
+				2D635EC429FC368D00F4B49B /* EnvironmentManager.swift */,
+				2DEA13DE29FCEB4D00E76FED /* UserDefaultInfo.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2DEA13E829FCEB7400E76FED /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				2DEA13E929FCEB8600E76FED /* InternetObserver.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		2DEA13EE29FCEBB000E76FED /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2D635EC929FC36B200F4B49B /* Strings.swift */,
+				2DEA13EF29FCEBBF00E76FED /* NotificationNames.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2DEA13F429FCEBE700E76FED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +292,9 @@
 			dependencies = (
 			);
 			name = FooManagement;
+			packageProductDependencies = (
+				2DEA13F629FCEC1600E76FED /* Reachability */,
+			);
 			productName = FooManagement;
 			productReference = 2D635E6F29FC311100F4B49B /* FooManagement.app */;
 			productType = "com.apple.product-type.application";
@@ -346,6 +401,9 @@
 				Base,
 			);
 			mainGroup = 2D635E6629FC311100F4B49B;
+			packageReferences = (
+				2DEA13F529FCEC1600E76FED /* XCRemoteSwiftPackageReference "Reachability" */,
+			);
 			productRefGroup = 2D635E7029FC311100F4B49B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -417,11 +475,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEA13DF29FCEB4D00E76FED /* UserDefaultInfo.swift in Sources */,
 				2D635E7729FC311100F4B49B /* ViewController.swift in Sources */,
 				2D635E7329FC311100F4B49B /* AppDelegate.swift in Sources */,
 				2D635ECA29FC36B200F4B49B /* Strings.swift in Sources */,
 				2D635E7529FC311100F4B49B /* SceneDelegate.swift in Sources */,
+				2DEA13F029FCEBBF00E76FED /* NotificationNames.swift in Sources */,
 				2D635EC529FC368D00F4B49B /* EnvironmentManager.swift in Sources */,
+				2DEA13EA29FCEB8600E76FED /* InternetObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,11 +498,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEA13E629FCEB6A00E76FED /* UserDefaultInfo.swift in Sources */,
+				2DEA13ED29FCEB8600E76FED /* InternetObserver.swift in Sources */,
 				2D635ED529FC39CF00F4B49B /* ViewController.swift in Sources */,
 				2D635ED429FC39CF00F4B49B /* SceneDelegate.swift in Sources */,
 				2D635ED329FC39CF00F4B49B /* AppDelegate.swift in Sources */,
 				2D635E9629FC311200F4B49B /* FooManagementUITestsLaunchTests.swift in Sources */,
 				2D635ED129FC39B900F4B49B /* EnvironmentManager.swift in Sources */,
+				2DEA13F329FCEBBF00E76FED /* NotificationNames.swift in Sources */,
 				2D635E9429FC311200F4B49B /* FooManagementUITests.swift in Sources */,
 				2D635ED829FC39E000F4B49B /* Strings.swift in Sources */,
 			);
@@ -451,11 +515,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEA13E429FCEB6900E76FED /* UserDefaultInfo.swift in Sources */,
 				2D635EA429FC331D00F4B49B /* ViewController.swift in Sources */,
 				2D635EA529FC331D00F4B49B /* AppDelegate.swift in Sources */,
 				2D635ECB29FC36B200F4B49B /* Strings.swift in Sources */,
 				2D635EA629FC331D00F4B49B /* SceneDelegate.swift in Sources */,
+				2DEA13F229FCEBBF00E76FED /* NotificationNames.swift in Sources */,
 				2D635EC629FC368D00F4B49B /* EnvironmentManager.swift in Sources */,
+				2DEA13EC29FCEB8600E76FED /* InternetObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,11 +530,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEA13E229FCEB6900E76FED /* UserDefaultInfo.swift in Sources */,
 				2D635EB329FC334000F4B49B /* ViewController.swift in Sources */,
 				2D635EB429FC334000F4B49B /* AppDelegate.swift in Sources */,
 				2D635ECC29FC36B200F4B49B /* Strings.swift in Sources */,
 				2D635EB529FC334000F4B49B /* SceneDelegate.swift in Sources */,
+				2DEA13F129FCEBBF00E76FED /* NotificationNames.swift in Sources */,
 				2D635EC729FC368D00F4B49B /* EnvironmentManager.swift in Sources */,
+				2DEA13EB29FCEB8600E76FED /* InternetObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1110,6 +1180,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DEA13F529FCEC1600E76FED /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DEA13F629FCEC1600E76FED /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA13F529FCEC1600E76FED /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2D635E6729FC311100F4B49B /* Project object */;
 }
