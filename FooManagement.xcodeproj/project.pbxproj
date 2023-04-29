@@ -58,6 +58,33 @@
 		2DEA13F229FCEBBF00E76FED /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13EF29FCEBBF00E76FED /* NotificationNames.swift */; };
 		2DEA13F329FCEBBF00E76FED /* NotificationNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13EF29FCEBBF00E76FED /* NotificationNames.swift */; };
 		2DEA13F729FCEC1600E76FED /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA13F629FCEC1600E76FED /* Reachability */; };
+		2DEA13FC29FCEC7900E76FED /* ServicesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13FB29FCEC7900E76FED /* ServicesFactory.swift */; };
+		2DEA13FD29FCEC7900E76FED /* ServicesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13FB29FCEC7900E76FED /* ServicesFactory.swift */; };
+		2DEA13FE29FCEC7900E76FED /* ServicesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13FB29FCEC7900E76FED /* ServicesFactory.swift */; };
+		2DEA13FF29FCEC7900E76FED /* ServicesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA13FB29FCEC7900E76FED /* ServicesFactory.swift */; };
+		2DEA140129FCEC9800E76FED /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA140029FCEC9800E76FED /* KeychainService.swift */; };
+		2DEA140229FCEC9800E76FED /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA140029FCEC9800E76FED /* KeychainService.swift */; };
+		2DEA140329FCEC9800E76FED /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA140029FCEC9800E76FED /* KeychainService.swift */; };
+		2DEA140429FCEC9800E76FED /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA140029FCEC9800E76FED /* KeychainService.swift */; };
+		2DEA140729FCED2F00E76FED /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA140629FCED2F00E76FED /* SwiftKeychainWrapper */; };
+		2DEA140A29FCED5700E76FED /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA140929FCED5700E76FED /* Realm */; };
+		2DEA140C29FCED5700E76FED /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA140B29FCED5700E76FED /* RealmSwift */; };
+		2DEA140E29FCED6900E76FED /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA140D29FCED6900E76FED /* DatabaseService.swift */; };
+		2DEA140F29FCED6900E76FED /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA140D29FCED6900E76FED /* DatabaseService.swift */; };
+		2DEA141029FCED6900E76FED /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA140D29FCED6900E76FED /* DatabaseService.swift */; };
+		2DEA141129FCED6900E76FED /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA140D29FCED6900E76FED /* DatabaseService.swift */; };
+		2DEA141329FCEDAC00E76FED /* AppStoredSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA141229FCEDAC00E76FED /* AppStoredSettings.swift */; };
+		2DEA141429FCEDAC00E76FED /* AppStoredSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA141229FCEDAC00E76FED /* AppStoredSettings.swift */; };
+		2DEA141529FCEDAC00E76FED /* AppStoredSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA141229FCEDAC00E76FED /* AppStoredSettings.swift */; };
+		2DEA141629FCEDAC00E76FED /* AppStoredSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA141229FCEDAC00E76FED /* AppStoredSettings.swift */; };
+		2DEA141929FCEDD200E76FED /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA141829FCEDD200E76FED /* Reachability */; };
+		2DEA141B29FCEDD200E76FED /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA141A29FCEDD200E76FED /* SwiftKeychainWrapper */; };
+		2DEA141D29FCEDD200E76FED /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA141C29FCEDD200E76FED /* Realm */; };
+		2DEA141F29FCEDD200E76FED /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA141E29FCEDD200E76FED /* RealmSwift */; };
+		2DEA142129FCEDD900E76FED /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA142029FCEDD900E76FED /* Reachability */; };
+		2DEA142329FCEDD900E76FED /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA142229FCEDD900E76FED /* SwiftKeychainWrapper */; };
+		2DEA142529FCEDD900E76FED /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA142429FCEDD900E76FED /* Realm */; };
+		2DEA142729FCEDD900E76FED /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2DEA142629FCEDD900E76FED /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +128,10 @@
 		2DEA13DE29FCEB4D00E76FED /* UserDefaultInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultInfo.swift; sourceTree = "<group>"; };
 		2DEA13E929FCEB8600E76FED /* InternetObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetObserver.swift; sourceTree = "<group>"; };
 		2DEA13EF29FCEBBF00E76FED /* NotificationNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNames.swift; sourceTree = "<group>"; };
+		2DEA13FB29FCEC7900E76FED /* ServicesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesFactory.swift; sourceTree = "<group>"; };
+		2DEA140029FCEC9800E76FED /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		2DEA140D29FCED6900E76FED /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		2DEA141229FCEDAC00E76FED /* AppStoredSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoredSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +139,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEA140C29FCED5700E76FED /* RealmSwift in Frameworks */,
+				2DEA140A29FCED5700E76FED /* Realm in Frameworks */,
+				2DEA140729FCED2F00E76FED /* SwiftKeychainWrapper in Frameworks */,
 				2DEA13F729FCEC1600E76FED /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +164,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEA142729FCEDD900E76FED /* RealmSwift in Frameworks */,
+				2DEA142529FCEDD900E76FED /* Realm in Frameworks */,
+				2DEA142329FCEDD900E76FED /* SwiftKeychainWrapper in Frameworks */,
+				2DEA142129FCEDD900E76FED /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +175,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DEA141F29FCEDD200E76FED /* RealmSwift in Frameworks */,
+				2DEA141D29FCEDD200E76FED /* Realm in Frameworks */,
+				2DEA141B29FCEDD200E76FED /* SwiftKeychainWrapper in Frameworks */,
+				2DEA141929FCEDD200E76FED /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +192,7 @@
 				2D635E8829FC311200F4B49B /* FooManagementTests */,
 				2D635E9229FC311200F4B49B /* FooManagementUITests */,
 				2D635E7029FC311100F4B49B /* Products */,
+				2DEA141729FCEDD200E76FED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +260,7 @@
 		2D635EC229FC367300F4B49B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2DEA13F829FCEC4800E76FED /* Services */,
 				2D635EC329FC367800F4B49B /* System */,
 			);
 			path = Core;
@@ -265,6 +309,7 @@
 			children = (
 				2D635EC929FC36B200F4B49B /* Strings.swift */,
 				2DEA13EF29FCEBBF00E76FED /* NotificationNames.swift */,
+				2DEA141229FCEDAC00E76FED /* AppStoredSettings.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -274,6 +319,39 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2DEA13F829FCEC4800E76FED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2DEA13F929FCEC5700E76FED /* CoreServices */,
+				2DEA13FA29FCEC6100E76FED /* NetworkServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2DEA13F929FCEC5700E76FED /* CoreServices */ = {
+			isa = PBXGroup;
+			children = (
+				2DEA13FB29FCEC7900E76FED /* ServicesFactory.swift */,
+				2DEA140029FCEC9800E76FED /* KeychainService.swift */,
+				2DEA140D29FCED6900E76FED /* DatabaseService.swift */,
+			);
+			path = CoreServices;
+			sourceTree = "<group>";
+		};
+		2DEA13FA29FCEC6100E76FED /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		2DEA141729FCEDD200E76FED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +372,9 @@
 			name = FooManagement;
 			packageProductDependencies = (
 				2DEA13F629FCEC1600E76FED /* Reachability */,
+				2DEA140629FCED2F00E76FED /* SwiftKeychainWrapper */,
+				2DEA140929FCED5700E76FED /* Realm */,
+				2DEA140B29FCED5700E76FED /* RealmSwift */,
 			);
 			productName = FooManagement;
 			productReference = 2D635E6F29FC311100F4B49B /* FooManagement.app */;
@@ -348,6 +429,12 @@
 			dependencies = (
 			);
 			name = "FooManagement-Dev";
+			packageProductDependencies = (
+				2DEA142029FCEDD900E76FED /* Reachability */,
+				2DEA142229FCEDD900E76FED /* SwiftKeychainWrapper */,
+				2DEA142429FCEDD900E76FED /* Realm */,
+				2DEA142629FCEDD900E76FED /* RealmSwift */,
+			);
 			productName = FooManagement;
 			productReference = 2D635EAF29FC331D00F4B49B /* FooManagement-Dev.app */;
 			productType = "com.apple.product-type.application";
@@ -365,6 +452,12 @@
 			dependencies = (
 			);
 			name = "FooManagement-Staging";
+			packageProductDependencies = (
+				2DEA141829FCEDD200E76FED /* Reachability */,
+				2DEA141A29FCEDD200E76FED /* SwiftKeychainWrapper */,
+				2DEA141C29FCEDD200E76FED /* Realm */,
+				2DEA141E29FCEDD200E76FED /* RealmSwift */,
+			);
 			productName = FooManagement;
 			productReference = 2D635EBE29FC334000F4B49B /* FooManagement-Staging.app */;
 			productType = "com.apple.product-type.application";
@@ -403,6 +496,8 @@
 			mainGroup = 2D635E6629FC311100F4B49B;
 			packageReferences = (
 				2DEA13F529FCEC1600E76FED /* XCRemoteSwiftPackageReference "Reachability" */,
+				2DEA140529FCED2F00E76FED /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				2DEA140829FCED5700E76FED /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 2D635E7029FC311100F4B49B /* Products */;
 			projectDirPath = "";
@@ -478,11 +573,15 @@
 				2DEA13DF29FCEB4D00E76FED /* UserDefaultInfo.swift in Sources */,
 				2D635E7729FC311100F4B49B /* ViewController.swift in Sources */,
 				2D635E7329FC311100F4B49B /* AppDelegate.swift in Sources */,
+				2DEA140129FCEC9800E76FED /* KeychainService.swift in Sources */,
 				2D635ECA29FC36B200F4B49B /* Strings.swift in Sources */,
+				2DEA141329FCEDAC00E76FED /* AppStoredSettings.swift in Sources */,
 				2D635E7529FC311100F4B49B /* SceneDelegate.swift in Sources */,
 				2DEA13F029FCEBBF00E76FED /* NotificationNames.swift in Sources */,
 				2D635EC529FC368D00F4B49B /* EnvironmentManager.swift in Sources */,
 				2DEA13EA29FCEB8600E76FED /* InternetObserver.swift in Sources */,
+				2DEA13FC29FCEC7900E76FED /* ServicesFactory.swift in Sources */,
+				2DEA140E29FCED6900E76FED /* DatabaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,10 +600,14 @@
 				2DEA13E629FCEB6A00E76FED /* UserDefaultInfo.swift in Sources */,
 				2DEA13ED29FCEB8600E76FED /* InternetObserver.swift in Sources */,
 				2D635ED529FC39CF00F4B49B /* ViewController.swift in Sources */,
+				2DEA141629FCEDAC00E76FED /* AppStoredSettings.swift in Sources */,
+				2DEA13FF29FCEC7900E76FED /* ServicesFactory.swift in Sources */,
 				2D635ED429FC39CF00F4B49B /* SceneDelegate.swift in Sources */,
+				2DEA140429FCEC9800E76FED /* KeychainService.swift in Sources */,
 				2D635ED329FC39CF00F4B49B /* AppDelegate.swift in Sources */,
 				2D635E9629FC311200F4B49B /* FooManagementUITestsLaunchTests.swift in Sources */,
 				2D635ED129FC39B900F4B49B /* EnvironmentManager.swift in Sources */,
+				2DEA141129FCED6900E76FED /* DatabaseService.swift in Sources */,
 				2DEA13F329FCEBBF00E76FED /* NotificationNames.swift in Sources */,
 				2D635E9429FC311200F4B49B /* FooManagementUITests.swift in Sources */,
 				2D635ED829FC39E000F4B49B /* Strings.swift in Sources */,
@@ -518,11 +621,15 @@
 				2DEA13E429FCEB6900E76FED /* UserDefaultInfo.swift in Sources */,
 				2D635EA429FC331D00F4B49B /* ViewController.swift in Sources */,
 				2D635EA529FC331D00F4B49B /* AppDelegate.swift in Sources */,
+				2DEA140329FCEC9800E76FED /* KeychainService.swift in Sources */,
 				2D635ECB29FC36B200F4B49B /* Strings.swift in Sources */,
+				2DEA141529FCEDAC00E76FED /* AppStoredSettings.swift in Sources */,
 				2D635EA629FC331D00F4B49B /* SceneDelegate.swift in Sources */,
 				2DEA13F229FCEBBF00E76FED /* NotificationNames.swift in Sources */,
 				2D635EC629FC368D00F4B49B /* EnvironmentManager.swift in Sources */,
 				2DEA13EC29FCEB8600E76FED /* InternetObserver.swift in Sources */,
+				2DEA13FE29FCEC7900E76FED /* ServicesFactory.swift in Sources */,
+				2DEA141029FCED6900E76FED /* DatabaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,11 +640,15 @@
 				2DEA13E229FCEB6900E76FED /* UserDefaultInfo.swift in Sources */,
 				2D635EB329FC334000F4B49B /* ViewController.swift in Sources */,
 				2D635EB429FC334000F4B49B /* AppDelegate.swift in Sources */,
+				2DEA140229FCEC9800E76FED /* KeychainService.swift in Sources */,
 				2D635ECC29FC36B200F4B49B /* Strings.swift in Sources */,
+				2DEA141429FCEDAC00E76FED /* AppStoredSettings.swift in Sources */,
 				2D635EB529FC334000F4B49B /* SceneDelegate.swift in Sources */,
 				2DEA13F129FCEBBF00E76FED /* NotificationNames.swift in Sources */,
 				2D635EC729FC368D00F4B49B /* EnvironmentManager.swift in Sources */,
 				2DEA13EB29FCEB8600E76FED /* InternetObserver.swift in Sources */,
+				2DEA13FD29FCEC7900E76FED /* ServicesFactory.swift in Sources */,
+				2DEA140F29FCED6900E76FED /* DatabaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1190,6 +1301,22 @@
 				kind = branch;
 			};
 		};
+		2DEA140529FCED2F00E76FED /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		2DEA140829FCED5700E76FED /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1197,6 +1324,61 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2DEA13F529FCEC1600E76FED /* XCRemoteSwiftPackageReference "Reachability" */;
 			productName = Reachability;
+		};
+		2DEA140629FCED2F00E76FED /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140529FCED2F00E76FED /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		2DEA140929FCED5700E76FED /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140829FCED5700E76FED /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2DEA140B29FCED5700E76FED /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140829FCED5700E76FED /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		2DEA141829FCEDD200E76FED /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA13F529FCEC1600E76FED /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		2DEA141A29FCEDD200E76FED /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140529FCED2F00E76FED /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		2DEA141C29FCEDD200E76FED /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140829FCED5700E76FED /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2DEA141E29FCEDD200E76FED /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140829FCED5700E76FED /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		2DEA142029FCEDD900E76FED /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA13F529FCEC1600E76FED /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		2DEA142229FCEDD900E76FED /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140529FCED2F00E76FED /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		2DEA142429FCEDD900E76FED /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140829FCED5700E76FED /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2DEA142629FCEDD900E76FED /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140829FCED5700E76FED /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
