@@ -38,7 +38,8 @@ jobs:
           restore-keys: ${{ runner.os }}-deps-v1-
  
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_14.2.app && /usr/bin/xcodebuild -version
+      run: |
+        xcodebuild -workspace Bullet.xcworkspace -scheme Bullet -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' build
     - name: Build
       run: xcodebuild -scheme $SCHEME -project $PROJECT -destination 'platform=iOS Simulator,name=iPhone 12,OS=15' | xcpretty && exit ${PIPESTATUS[0]}
     - name: Upload products
