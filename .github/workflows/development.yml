@@ -47,8 +47,8 @@ jobs:
 #       run: |
 #         gem install cocoapods
 #         pod install
-     - name: Install SPM dependencies
-       run: swift package update
+    - name: Install SPM dependencies
+      run: swift package update
     - name: Download products
       uses: actions/download-artifact@v1
       with:
@@ -77,8 +77,8 @@ jobs:
 #       run: |
 #         gem install cocoapods
 #         pod install
-     - name: Install SPM dependencies
-       run: swift package update
+    - name: Install SPM dependencies
+      run: swift package update
     - name: Download products
       uses: actions/download-artifact@v1
       with:
