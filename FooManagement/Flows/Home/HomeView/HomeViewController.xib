@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="FooManagement" customModuleProvider="target">
             <connections>
-                <outlet property="addOrderStackView" destination="cfa-Ic-lt2" id="jnD-05-iDb"/>
+                <outlet property="addOrderButton" destination="cfa-Ic-lt2" id="XiX-dc-wsD"/>
                 <outlet property="headerView" destination="CKy-gc-v2c" id="wep-mC-rIE"/>
                 <outlet property="ordersTableView" destination="dn0-3q-rlf" id="qBi-r8-gbK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -22,37 +22,36 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="U9D-M9-wOy">
-                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKy-gc-v2c" customClass="HomeHeaderView" customModule="FooManagement" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="142"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="127.66666666666667"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="142" id="ytJ-ux-yW5"/>
-                            </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfa-Ic-lt2" customClass="AddOrderButtonView" customModule="FooManagement" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="142" width="393" height="108"/>
+                            <rect key="frame" x="0.0" y="127.66666666666669" width="393" height="128"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="108" id="e1D-KY-p8H"/>
-                            </constraints>
                         </view>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dn0-3q-rlf">
-                            <rect key="frame" x="0.0" y="250" width="393" height="543"/>
+                            <rect key="frame" x="0.0" y="255.66666666666669" width="393" height="596.33333333333326"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
                     </subviews>
+                    <constraints>
+                        <constraint firstItem="dn0-3q-rlf" firstAttribute="height" secondItem="U9D-M9-wOy" secondAttribute="height" multiplier="0.7" id="SOo-vx-27d"/>
+                        <constraint firstItem="CKy-gc-v2c" firstAttribute="height" secondItem="U9D-M9-wOy" secondAttribute="height" multiplier="0.15" id="kCE-IW-u6v"/>
+                        <constraint firstItem="cfa-Ic-lt2" firstAttribute="height" secondItem="U9D-M9-wOy" secondAttribute="height" multiplier="0.15" id="qcL-Pu-sPf"/>
+                    </constraints>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="U9D-M9-wOy" secondAttribute="bottom" id="1fR-p8-mbj"/>
-                <constraint firstItem="U9D-M9-wOy" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="9r7-ZQ-tZU"/>
-                <constraint firstItem="U9D-M9-wOy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="K9P-sR-uzd"/>
-                <constraint firstItem="U9D-M9-wOy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="liW-De-1FH"/>
+                <constraint firstItem="U9D-M9-wOy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3ra-Ql-zOL"/>
+                <constraint firstAttribute="bottom" secondItem="U9D-M9-wOy" secondAttribute="bottom" id="QSZ-p5-3IQ"/>
+                <constraint firstItem="U9D-M9-wOy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gII-dS-5tD"/>
+                <constraint firstItem="U9D-M9-wOy" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="mR3-p0-Xtu"/>
             </constraints>
-            <point key="canvasLocation" x="140" y="21"/>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
         </view>
     </objects>
     <resources>

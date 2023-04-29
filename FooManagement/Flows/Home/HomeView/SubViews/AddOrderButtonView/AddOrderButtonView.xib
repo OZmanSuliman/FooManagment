@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pss-rn-bVt">
-                    <rect key="frame" x="20" y="30" width="353" height="67"/>
+                    <rect key="frame" x="19.666666666666657" y="46.333333333333329" width="353.66666666666674" height="34.333333333333329"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                     <connections>
@@ -30,10 +30,9 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="pss-rn-bVt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="09D-Mk-P9q"/>
                 <constraint firstItem="pss-rn-bVt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0OS-uj-O2H"/>
                 <constraint firstItem="pss-rn-bVt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6VM-07-VFj"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pss-rn-bVt" secondAttribute="trailing" constant="20" id="FbB-5U-CGd"/>
+                <constraint firstItem="pss-rn-bVt" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.9" id="8lj-gS-Tw8"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="5.343511450381679" y="-234.85915492957747"/>

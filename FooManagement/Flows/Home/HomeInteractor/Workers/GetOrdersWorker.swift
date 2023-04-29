@@ -6,3 +6,24 @@
 //
 
 import Foundation
+protocol GetOrdersLogic {
+    func getOrders() -> [Order]
+}
+class GetOrdersWorker {
+
+    var dataBaseManager: DatabaseProtocol
+    
+    init(dataBaseManager: DatabaseProtocol) {
+        self.dataBaseManager = dataBaseManager
+    }
+    
+}
+
+
+extension GetOrdersWorker: GetOrdersLogic {
+    func getOrders() -> [Order] {
+        let orders: [Order] = dataBaseManager.fetch()
+        
+        return orders
+    }
+}

@@ -7,10 +7,13 @@
 
 import UIKit
 
+protocol AddOrderButtonDelegate {
+    func addOrderHandler()
+}
 
 class AddOrderButtonView: UIView {
     @IBOutlet weak var addOrderButton: UIButton!
-    var addOrderHandler: (() -> Void)?
+    var delegate: AddOrderButtonDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,7 +30,7 @@ class AddOrderButtonView: UIView {
         }
     }
     @IBAction func didTapAddOrder(_ sender: Any) {
-        addOrderHandler?()
+        delegate?.addOrderHandler()
     }
 }
 

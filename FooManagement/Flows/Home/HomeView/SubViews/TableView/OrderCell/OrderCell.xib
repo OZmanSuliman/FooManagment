@@ -18,23 +18,20 @@
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oi2-cE-k6D">
                         <rect key="frame" x="23" y="16" width="347" height="33"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Strawberry-Milkshake.pg" translatesAutoresizingMaskIntoConstraints="NO" id="xIT-gW-bc4">
-                                <rect key="frame" x="0.0" y="0.0" width="56" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="8iL-Ua-xwt"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xIT-gW-bc4">
+                                <rect key="frame" x="0.0" y="0.0" width="52" height="33"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kkh-M0-fOf">
-                                <rect key="frame" x="64" y="0.0" width="185" height="33"/>
+                                <rect key="frame" x="60.000000000000014" y="0.0" width="192.33333333333337" height="33"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVl-c8-8aO">
-                                        <rect key="frame" x="0.0" y="0.0" width="185" height="16.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="192.33333333333334" height="16.666666666666668"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIQ-i0-1bO">
-                                        <rect key="frame" x="0.0" y="16.666666666666664" width="185" height="16.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="16.666666666666664" width="192.33333333333334" height="16.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -42,10 +39,10 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVF-Ww-pfh">
-                                <rect key="frame" x="257" y="0.0" width="90" height="33"/>
+                                <rect key="frame" x="260.33333333333331" y="0.0" width="86.666666666666686" height="33"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVs-cf-pP7" customClass="StatusView" customModule="FooManagement" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="3.6666666666666679" width="90" height="26"/>
+                                        <rect key="frame" x="0.0" y="3.6666666666666679" width="86.666666666666671" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="26" id="dwd-p5-VnX"/>
                                         </constraints>
@@ -54,11 +51,14 @@
                                 <constraints>
                                     <constraint firstItem="NVs-cf-pP7" firstAttribute="centerY" secondItem="pVF-Ww-pfh" secondAttribute="centerY" id="51D-47-ZfZ"/>
                                     <constraint firstItem="NVs-cf-pP7" firstAttribute="centerX" secondItem="pVF-Ww-pfh" secondAttribute="centerX" id="Pbh-xj-uw2"/>
-                                    <constraint firstAttribute="width" constant="90" id="haz-4D-X3m"/>
                                     <constraint firstAttribute="trailing" secondItem="NVs-cf-pP7" secondAttribute="trailing" id="xYR-oo-G8c"/>
                                 </constraints>
                             </view>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="xIT-gW-bc4" firstAttribute="width" secondItem="oi2-cE-k6D" secondAttribute="width" multiplier="0.15" id="Ih7-9Y-vNM"/>
+                            <constraint firstItem="pVF-Ww-pfh" firstAttribute="width" secondItem="oi2-cE-k6D" secondAttribute="width" multiplier="0.25" id="Ly6-6j-EXH"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
@@ -77,7 +77,4 @@
             <point key="canvasLocation" x="148.85496183206106" y="25"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="Strawberry-Milkshake.pg" width="1200" height="800"/>
-    </resources>
 </document>

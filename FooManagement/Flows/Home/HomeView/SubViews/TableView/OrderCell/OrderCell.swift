@@ -6,6 +6,9 @@
 //
 
 import UIKit
+protocol OrderCellDelegate {
+    func changeStatus(order: Order)
+}
 
 class OrderCell: UITableViewCell {
     @IBOutlet weak var orderName: UILabel!
@@ -13,6 +16,9 @@ class OrderCell: UITableViewCell {
     @IBOutlet weak var orderImage: UIImageView!
     @IBOutlet weak var orderStatus: StatusView!
 
+    var order: Order?
+    var delegate: OrderCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setupView()
@@ -22,12 +28,19 @@ class OrderCell: UITableViewCell {
         super.prepareForReuse()
     }
     
-    func setupCell() {
-        
+    func setupCell(order: Order) {
+        self.order = order
+        setupView()
     }
     
     func setupView() {
         orderImage.layer.cornerRadius = 10.0
         orderImage.layer.masksToBounds = true
+        guard let order else { return }
+        orderImage.image = UIImage(named: "Strawberry-Milkshake")
+        orderName.text = order.name
+        orderDescription.text = order.desc
+        orderStatus.setupStatus(order.status)
+        orderStatus.statusTapHandler = { self.delegate?.changeStatus(order: order) }
     }
 }

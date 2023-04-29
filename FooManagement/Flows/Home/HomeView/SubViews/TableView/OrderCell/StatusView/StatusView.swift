@@ -11,7 +11,6 @@ class StatusView: UIView {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
     var statusTapHandler: (() -> Void)?
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         setupView()
@@ -29,6 +28,13 @@ class StatusView: UIView {
 }
 
 extension StatusView {
+    func setupStatus(_ status: Int) {
+        guard let status = Status(rawValue: status) else { return }
+        let statusString = String(describing: status)
+        statusLabel.text = statusString
+        containerView.backgroundColor = UIColor(named: statusString)
+    }
+    
     private func setupView() {
         containerView.backgroundColor = .systemGreen
         containerView.layer.cornerRadius = 10

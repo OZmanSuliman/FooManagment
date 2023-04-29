@@ -31,13 +31,14 @@ enum Strings: String {
     case HeaderBg = "Header-bg"
     case plus
     case StrawberryMilkshake = "Strawberry-Milkshake"
+    case emptyList = "no-money"
 
     // Text
     case Orders
     case FooManagement = "Foo Management"
     case createNewOrder = "Create new order"
-
-
+    case noOrders = "No Orders To Show"
+    case addOrders = "Add Some Orders To Preview"
     func fullString(withParameters parameters: CVarArg...) -> String {
         var str = rawValue
 
