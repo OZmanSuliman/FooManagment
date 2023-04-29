@@ -1513,6 +1513,7 @@
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FooManagement/Resources/InfoPlists/FooManagement-Dev-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Foo-Dev";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -1541,6 +1542,7 @@
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FooManagement/Resources/InfoPlists/FooManagement-Dev-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Foo-Dev";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -1569,6 +1571,7 @@
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FooManagement/Resources/InfoPlists/FooManagement-Staging-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Foo-Staging";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1596,6 +1599,7 @@
 				DEVELOPMENT_TEAM = YQ3FVUF368;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FooManagement/Resources/InfoPlists/FooManagement-Staging-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Foo-Staging";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1713,6 +1717,7 @@
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FooManagement/Resources/InfoPlists/FooManagement-Dev-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Foo-Dev";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -1742,6 +1747,7 @@
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FooManagement/Resources/InfoPlists/FooManagement-Staging-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Foo-Staging";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
