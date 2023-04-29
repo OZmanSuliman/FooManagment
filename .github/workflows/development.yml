@@ -21,10 +21,12 @@ jobs:
 #       run: |
 #         gem install cocoapods
 #         pod install
-    - name: Install SPM dependencies
-      run: |
-        swift package update
-        swift package resolve
+    - name: Resolve Dependencies
+      id: resolution
+      uses: GetSidetrack/action-xcodeproj-spm-update@main
+      with:
+        forceResolution: true
+        failWhenOutdated: false
     - name: Build application
       run: |
         set -o pipefail && xcodebuild clean -scheme $SCHEME -destination "platform=iOS Simulator,name=$DEVICE" -derivedDataPath $DERIVED_DATA_PATH build-for-testing | xcpretty --color --simple
