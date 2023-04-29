@@ -10,6 +10,7 @@ jobs:
   build:
     name: Build
     env:
+      PROJECT: "FooManagement.xcodeproj"
       SCHEME: "FooManagement-Dev"
       DEVICE: "iPhone 11"
       DERIVED_DATA_PATH: "DerivedData"
@@ -21,18 +22,31 @@ jobs:
 #       run: |
 #         gem install cocoapods
 #         pod install
+    - name: Cancel Previous Runs
+      uses: styfle/cancel-workflow-action@0.9.1
+      with:
+        access_token: ${{ github.token }}
+
+    - name: Swift Packages Cache
+      uses: actions/cache@v2
+      id: cache
+      with:
+          path: |
+            Build/SourcePackages
+            Build/Build/Products
+          key: ${{ runner.os }}-deps-v1-${{ hashFiles('BILDsolid.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
+          restore-keys: ${{ runner.os }}-deps-v1-
+ 
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_14.2.app
-    - name: Xcode build
-      run: |
-        cd Swift
-        xcodebuild clean build -scheme MyApp -destination 'platform=iOS Simulator,name=iPhone 12,OS=16.4.1'
+      run: sudo xcode-select -switch /Applications/Xcode_14.2.app && /usr/bin/xcodebuild -version
+    - name: Run tests
+      run: xcodebuild -scheme $SCHEME -project $PROJECT -destination 'platform=iOS Simulator,name=iPhone 12,OS=16.0' | xcpretty && exit ${PIPESTATUS[0]}
     - name: Upload products
       uses: actions/upload-artifact@v2
       with:
         name: Products
         path: DerivedData/Build/Products
-
+        
   unit_test:
     name: Unit test
     env:
