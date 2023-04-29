@@ -25,7 +25,7 @@ jobs:
       run: sudo xcode-select -switch /Applications/Xcode_14.2.app
     - name: Xcode build
       run: |
-        cd Swift/
+        cd Swift
         xcodebuild clean build -scheme MyApp -destination 'platform=iOS Simulator,name=iPhone 12,OS=16.4.1'
     - name: Upload products
       uses: actions/upload-artifact@v2
