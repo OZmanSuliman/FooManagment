@@ -21,11 +21,12 @@ jobs:
 #       run: |
 #         gem install cocoapods
 #         pod install
-    - name: Build SPM dependencies
-      run: swift build
-    - name: Build application
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_14.2.app
+    - name: Xcode build
       run: |
-        set -o pipefail && xcodebuild clean -scheme $SCHEME -destination "platform=iOS Simulator,name=$DEVICE" -derivedDataPath $DERIVED_DATA_PATH build-for-testing | xcpretty --color --simple
+        cd Swift/
+        xcodebuild clean build -scheme MyApp -destination 'platform=iOS Simulator,name=iPhone 12,OS=16.4.1'
     - name: Upload products
       uses: actions/upload-artifact@v2
       with:
