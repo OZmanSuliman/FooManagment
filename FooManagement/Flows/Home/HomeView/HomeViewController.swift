@@ -15,10 +15,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var headerView: HomeHeaderView!
     @IBOutlet weak var addOrderButton: AddOrderButtonView!
     @IBOutlet weak var ordersTableView: UITableView!
-
+    var config = HomeConfiguration()
     var interactor: HomeBusinessLogic?
     var orders: [Order] = []
-    
+    var router: HomeRoutingLogic?
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
