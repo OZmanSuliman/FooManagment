@@ -11,19 +11,15 @@ class StatusView: UIView {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
     var statusTapHandler: (() -> Void)?
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setupView()
     }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        if let views = Bundle.main.loadNibNamed(String(describing: type(of: self)), owner: self, options: nil),
-            let view = views.first as? UIView {
-            view.frame = bounds
-            addSubview(view)
-        }
-        setupView()
+    
+    class func instanceFromNib() -> StatusView {
+        return (UINib(nibName: String(describing: StatusView.self),
+                      bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? StatusView)!
     }
 }
 
@@ -39,7 +35,6 @@ extension StatusView {
         containerView.backgroundColor = .systemGreen
         containerView.layer.cornerRadius = 10
         containerView.layer.masksToBounds = true
-        statusLabel.text = "Delivered"
         statusLabel.textColor = .white
         addGestureRecognizers()
     }

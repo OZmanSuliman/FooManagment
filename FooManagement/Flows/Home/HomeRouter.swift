@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomeRoutingLogic {
-    func navigateToDetails()
+    func navigateToDetails(order: Order)
 }
 
 class HomeRouter {
@@ -19,8 +19,9 @@ class HomeRouter {
 }
 
 extension HomeRouter: HomeRoutingLogic {
-    func navigateToDetails() {
-        let orderDetailsVC = OrderDetailsViewController().config.createViewController()
-        self.viewController.present(orderDetailsVC, animated: true)
+    func navigateToDetails(order: Order) {
+        let orderDetailsVC = OrderDetailsViewController().config.createViewController(order: order)
+//        self.viewController.present(orderDetailsVC, animated: true)
+        self.viewController.navigationController?.pushViewController(orderDetailsVC, animated: true)
     }
 }

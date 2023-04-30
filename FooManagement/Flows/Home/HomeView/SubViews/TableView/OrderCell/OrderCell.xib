@@ -41,7 +41,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVF-Ww-pfh">
                                 <rect key="frame" x="260.33333333333331" y="0.0" width="86.666666666666686" height="33"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVs-cf-pP7" customClass="StatusView" customModule="FooManagement" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVs-cf-pP7">
                                         <rect key="frame" x="0.0" y="3.6666666666666679" width="86.666666666666671" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="26" id="dwd-p5-VnX"/>
@@ -72,7 +72,7 @@
                 <outlet property="orderDescription" destination="OIQ-i0-1bO" id="KdM-7c-hVN"/>
                 <outlet property="orderImage" destination="xIT-gW-bc4" id="ZiU-Xo-Ifm"/>
                 <outlet property="orderName" destination="mVl-c8-8aO" id="HDP-cm-JfG"/>
-                <outlet property="orderStatus" destination="NVs-cf-pP7" id="Qcn-DB-0az"/>
+                <outlet property="orderStatus" destination="NVs-cf-pP7" id="t0M-vh-NdH"/>
             </connections>
             <point key="canvasLocation" x="148.85496183206106" y="25"/>
         </tableViewCell>

@@ -23,7 +23,17 @@ enum Strings: String {
     case invalidServerURL
     case networkIssue = "Network Not Available"
     case appStateSerialQueue
-
+    case identifier
+    case status
+    case errors
+    case succeeded
+    case message
+    case error
+    case access_token
+    case refresh_token
+    case expires_token_time
+    case lastUpdatedApiTokenTimeInfo
+    case hasApiAccessTokenInfo
     // colors
     case Orange
 
@@ -32,13 +42,22 @@ enum Strings: String {
     case plus
     case StrawberryMilkshake = "Strawberry-Milkshake"
     case emptyList = "no-money"
-
+    case backButton = "Chevron-left-BlackColor"
+    case trash = "trash.fill"
+    
     // Text
     case Orders
     case FooManagement = "Foo Management"
     case createNewOrder = "Create new order"
     case noOrders = "No Orders To Show"
     case addOrders = "Add Some Orders To Preview"
+    case Delete
+    case orderNumber = "order number"
+    case order = "order #"
+    case aed = "AED"
+    case orderStatus = "Order Status"
+    case orderDate = "Order Date"
+    case total = "Total"
     func fullString(withParameters parameters: CVarArg...) -> String {
         var str = rawValue
 
