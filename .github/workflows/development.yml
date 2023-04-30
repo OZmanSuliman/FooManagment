@@ -15,10 +15,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Setup Xcode
-      uses: actions/setup-xcode@v2
-      with:
-        xcode-version: '13.2'
     - name: Build
       run: xcodebuild -scheme $SCHEME -project $PROJECT -destination "platform=iOS Simulator,OS=15.2,name=iPhone 13" build
     - name: Upload artifacts
@@ -37,10 +33,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Setup Xcode
-      uses: actions/setup-xcode@v2
-      with:
-        xcode-version: '13.2'
     - name: Run Unit Tests
       run: xcodebuild -scheme $SCHEME -project $PROJECT -destination "platform=iOS Simulator,OS=15.2,name=iPhone 13" test -only-testing:MyProjectTests
 
@@ -54,9 +46,5 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Setup Xcode
-      uses: actions/setup-xcode@v2
-      with:
-        xcode-version: '13.2'
     - name: Run UI Tests
       run: xcodebuild -scheme $SCHEME -project $PROJECT -destination "platform=iOS Simulator,OS=15.2,name=iPhone 13" test -only-testing:MyProjectUITests
