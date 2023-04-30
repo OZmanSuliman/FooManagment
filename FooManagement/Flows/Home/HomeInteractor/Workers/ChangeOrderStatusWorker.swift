@@ -23,7 +23,7 @@ extension ChangeOrderStatusWorker: ChangeOrderStatusLogic {
     func changeOrderStatus(order: Order) {
         let updatedOrder = Order(id: order.id, name: order.name,
                                  desc: order.desc, image: order.image,
-                                 status: order.status < 4 ? order.status + 1 : order.status,
+                                 status: order.status < 3 ? order.status + 1 : order.status,
                                  price: order.price)
         dataBaseManager.update(updatedOrder)
     }
