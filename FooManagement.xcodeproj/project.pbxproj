@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D26560029FE66C000FB8517 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2655FF29FE66C000FB8517 /* UILabel+Extension.swift */; };
+		2D26560129FE66C000FB8517 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2655FF29FE66C000FB8517 /* UILabel+Extension.swift */; };
+		2D26560229FE66C000FB8517 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2655FF29FE66C000FB8517 /* UILabel+Extension.swift */; };
+		2D26560329FE66C000FB8517 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2655FF29FE66C000FB8517 /* UILabel+Extension.swift */; };
 		2D635E7329FC311100F4B49B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7229FC311100F4B49B /* AppDelegate.swift */; };
 		2D635E7529FC311100F4B49B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7429FC311100F4B49B /* SceneDelegate.swift */; };
 		2D635E7C29FC311200F4B49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D635E7B29FC311200F4B49B /* Assets.xcassets */; };
@@ -295,6 +299,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D2655FF29FE66C000FB8517 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		2D635E6F29FC311100F4B49B /* FooManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FooManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D635E7229FC311100F4B49B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D635E7429FC311100F4B49B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -618,6 +623,7 @@
 				2DEA14AA29FCFFC600E76FED /* UITableViewCell+Extension.swift */,
 				2DEA14B429FD009700E76FED /* UITableView+Extension.swift */,
 				2DEA150E29FD1D7300E76FED /* UIViewController+Extension.swift */,
+				2D2655FF29FE66C000FB8517 /* UILabel+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1129,6 +1135,7 @@
 			files = (
 				2DEA150F29FD1D7400E76FED /* UIViewController+Extension.swift in Sources */,
 				2DEA13DF29FCEB4D00E76FED /* UserDefaultInfo.swift in Sources */,
+				2D26560029FE66C000FB8517 /* UILabel+Extension.swift in Sources */,
 				2D998D9F29FE39FB008FE4D0 /* OrderDetailsPresenter.swift in Sources */,
 				2DEA14B529FD009700E76FED /* UITableView+Extension.swift in Sources */,
 				2D635E7329FC311100F4B49B /* AppDelegate.swift in Sources */,
@@ -1238,6 +1245,7 @@
 				2D998DAC29FE3A08008FE4D0 /* OrderDetailsConfig.swift in Sources */,
 				2DEA143029FCEE5B00E76FED /* NetworkService.swift in Sources */,
 				2DEA154529FD31B100E76FED /* StatusView.swift in Sources */,
+				2D26560329FE66C000FB8517 /* UILabel+Extension.swift in Sources */,
 				2DEA141129FCED6900E76FED /* DatabaseService.swift in Sources */,
 				2DEA146429FCF69600E76FED /* API.swift in Sources */,
 				2DEA13F329FCEBBF00E76FED /* NotificationNames.swift in Sources */,
@@ -1256,6 +1264,7 @@
 			files = (
 				2DEA151129FD1D7400E76FED /* UIViewController+Extension.swift in Sources */,
 				2DEA13E429FCEB6900E76FED /* UserDefaultInfo.swift in Sources */,
+				2D26560229FE66C000FB8517 /* UILabel+Extension.swift in Sources */,
 				2D998DA129FE39FB008FE4D0 /* OrderDetailsPresenter.swift in Sources */,
 				2DEA14B729FD009700E76FED /* UITableView+Extension.swift in Sources */,
 				2D635EA529FC331D00F4B49B /* AppDelegate.swift in Sources */,
@@ -1315,6 +1324,7 @@
 			files = (
 				2DEA151029FD1D7400E76FED /* UIViewController+Extension.swift in Sources */,
 				2DEA13E229FCEB6900E76FED /* UserDefaultInfo.swift in Sources */,
+				2D26560129FE66C000FB8517 /* UILabel+Extension.swift in Sources */,
 				2D998DA029FE39FB008FE4D0 /* OrderDetailsPresenter.swift in Sources */,
 				2DEA14B629FD009700E76FED /* UITableView+Extension.swift in Sources */,
 				2D635EB429FC334000F4B49B /* AppDelegate.swift in Sources */,

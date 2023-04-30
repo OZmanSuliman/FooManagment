@@ -42,9 +42,14 @@ extension OrderDetailsViewController {
         navigationItem.leftBarButtonItem = backButton
 
         guard let order else { return }
+
         self.orderName.text = order.name
+        self.orderName.setMargins(margin: 20)
         self.orderSubtitle.text = order.image
+        self.orderSubtitle.setMargins(margin: 20)
         self.orderDesc.text = order.desc
+        self.orderDesc.setMargins(margin: 20)
+        
         banner.image = UIImage(named: order.image)
     }
     

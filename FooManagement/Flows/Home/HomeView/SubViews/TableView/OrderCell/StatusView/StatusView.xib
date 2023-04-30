@@ -15,10 +15,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEb-M2-QNB">
-                    <rect key="frame" x="0.0" y="0.0" width="90" height="26"/>
+                    <rect key="frame" x="0.0" y="5" width="90" height="16"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HA8-dx-til">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HA8-dx-til">
                     <rect key="frame" x="24" y="2.6666666666666661" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -28,12 +28,12 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="OEb-M2-QNB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LX3-ey-UeL"/>
-                <constraint firstItem="OEb-M2-QNB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O9a-BR-6iw"/>
-                <constraint firstItem="HA8-dx-til" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OH3-J9-maE"/>
-                <constraint firstAttribute="trailing" secondItem="OEb-M2-QNB" secondAttribute="trailing" id="T13-8o-rv2"/>
-                <constraint firstItem="HA8-dx-til" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kWd-I7-etJ"/>
-                <constraint firstAttribute="bottom" secondItem="OEb-M2-QNB" secondAttribute="bottom" id="q6o-g4-9mR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="OEb-M2-QNB" secondAttribute="bottom" constant="5" id="BIE-28-9ul"/>
+                <constraint firstItem="HA8-dx-til" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Bwv-NX-z9R"/>
+                <constraint firstItem="HA8-dx-til" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FbL-Yf-hm6"/>
+                <constraint firstItem="OEb-M2-QNB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="QmZ-K4-yTJ"/>
+                <constraint firstAttribute="trailing" secondItem="OEb-M2-QNB" secondAttribute="trailing" id="SWM-qQ-K5O"/>
+                <constraint firstItem="OEb-M2-QNB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="owr-d8-mSD"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

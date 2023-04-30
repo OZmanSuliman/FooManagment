@@ -21,6 +21,10 @@ class StatusView: UIView {
         return (UINib(nibName: String(describing: StatusView.self),
                       bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? StatusView)!
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
 }
 
 extension StatusView {
@@ -32,6 +36,8 @@ extension StatusView {
     }
     
     private func setupView() {
+        statusLabel.text = ""
+        containerView.backgroundColor = .clear
         containerView.backgroundColor = .systemGreen
         containerView.layer.cornerRadius = 10
         containerView.layer.masksToBounds = true

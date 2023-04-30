@@ -26,6 +26,19 @@ class OrderCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        orderName.text = ""
+        orderDescription.text = ""
+        orderImage.image = nil
+        for subview in orderStatus.subviews {
+            subview.removeFromSuperview()
+        }
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        for subview in orderStatus.subviews {
+            subview.frame = orderStatus.bounds
+        }
     }
     
     func setupCell(order: Order) {

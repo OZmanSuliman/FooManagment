@@ -42,16 +42,14 @@
                                 <rect key="frame" x="260.33333333333331" y="0.0" width="86.666666666666686" height="33"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVs-cf-pP7">
-                                        <rect key="frame" x="0.0" y="3.6666666666666679" width="86.666666666666671" height="26"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="26" id="dwd-p5-VnX"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="8" width="86.666666666666671" height="17"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="NVs-cf-pP7" firstAttribute="centerY" secondItem="pVF-Ww-pfh" secondAttribute="centerY" id="51D-47-ZfZ"/>
-                                    <constraint firstItem="NVs-cf-pP7" firstAttribute="centerX" secondItem="pVF-Ww-pfh" secondAttribute="centerX" id="Pbh-xj-uw2"/>
-                                    <constraint firstAttribute="trailing" secondItem="NVs-cf-pP7" secondAttribute="trailing" id="xYR-oo-G8c"/>
+                                    <constraint firstItem="NVs-cf-pP7" firstAttribute="top" secondItem="pVF-Ww-pfh" secondAttribute="top" constant="8" id="4cf-eB-GGI"/>
+                                    <constraint firstItem="NVs-cf-pP7" firstAttribute="leading" secondItem="pVF-Ww-pfh" secondAttribute="leading" id="nEy-0J-Knu"/>
+                                    <constraint firstAttribute="trailing" secondItem="NVs-cf-pP7" secondAttribute="trailing" id="pnR-Rr-mwQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="NVs-cf-pP7" secondAttribute="bottom" constant="8" id="uX9-YF-4RN"/>
                                 </constraints>
                             </view>
                         </subviews>

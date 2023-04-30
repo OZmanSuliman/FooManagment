@@ -34,6 +34,16 @@ class DetailsTableViewCell: UITableViewCell {
         }
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        for subview in valueView.subviews {
+            (subview as? UILabel)?.textAlignment = .right
+            (subview as? UILabel)?.numberOfLines = 0
+            (subview as? UILabel)?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            subview.frame = valueView.bounds
+        }
+    }
+    
     func setupCell(order: Order, index: Int) {
         self.order = order
         self.index = index
@@ -55,14 +65,12 @@ class DetailsTableViewCell: UITableViewCell {
         case 1:
             self.title.text = Strings.orderDate.fullString()
             let dateLabel = UILabel()
-            dateLabel.frame = valueView.bounds
             dateLabel.text = order.createdAt.formatted(date: .abbreviated, time: .shortened)
             dateLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
             valueView.addSubview(dateLabel)
         case 2:
             self.title.text = Strings.total.fullString()
             let priceLabel = UILabel()
-            priceLabel.frame = valueView.bounds
             priceLabel.text = order.price
             priceLabel.font = UIFont.preferredFont(forTextStyle: .title3)
             priceLabel.textColor = UIColor(named: Strings.Orange.fullString())
