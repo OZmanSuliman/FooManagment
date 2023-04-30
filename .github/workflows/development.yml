@@ -16,16 +16,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Build
-      run: xcodebuild -scheme $SCHEME -project $PROJECT -destination "platform=iOS Simulator,OS=15.2,name=iPhone 13" build
+      run: xcodebuild -scheme $SCHEME -project $PROJECT -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.0' build
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
         name: BuildArtifacts
-        path: MyProject/build/Release-iphonesimulator/MyProject.app
+        path: $PROJECT/build/Release-iphonesimulator/$PROJECT.app
 
   unit_test:
     env:
      PROJECT: "FooManagement.xcodeproj"
+     TESTTARGET: "FooManagementTests"
      SCHEME: "FooManagement-Dev"
     needs: build
     runs-on: macos-latest
@@ -34,12 +35,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Run Unit Tests
-      run: xcodebuild -scheme $SCHEME -project $PROJECT -destination "platform=iOS Simulator,OS=15.2,name=iPhone 13" test -only-testing:MyProjectTests
+      run: xcodebuild -scheme $SCHEME -project $PROJECT -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.0' test -only-testing:$TESTTARGET
 
   ui_test:
     env:
      PROJECT: "FooManagement.xcodeproj"
      SCHEME: "FooManagement-Dev"
+     TESTTARGET: "FooManagementUITests"
     needs: build
     runs-on: macos-latest
     if: success()
@@ -47,4 +49,4 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Run UI Tests
-      run: xcodebuild -scheme $SCHEME -project $PROJECT -destination "platform=iOS Simulator,OS=15.2,name=iPhone 13" test -only-testing:MyProjectUITests
+      run: xcodebuild -scheme $SCHEME -project $PROJECT -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.0' test -only-testing:$TESTTARGET
