@@ -11,6 +11,15 @@
 		2D26560129FE66C000FB8517 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2655FF29FE66C000FB8517 /* UILabel+Extension.swift */; };
 		2D26560229FE66C000FB8517 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2655FF29FE66C000FB8517 /* UILabel+Extension.swift */; };
 		2D26560329FE66C000FB8517 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2655FF29FE66C000FB8517 /* UILabel+Extension.swift */; };
+		2D26560529FE816700FB8517 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 2D26560429FE816700FB8517 /* Reachability */; };
+		2D26560729FE816700FB8517 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 2D26560629FE816700FB8517 /* SwiftKeychainWrapper */; };
+		2D26560929FE816700FB8517 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2D26560829FE816700FB8517 /* Realm */; };
+		2D26560B29FE816700FB8517 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2D26560A29FE816700FB8517 /* RealmSwift */; };
+		2D26560D29FE816F00FB8517 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 2D26560C29FE816F00FB8517 /* Reachability */; };
+		2D26560F29FE816F00FB8517 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 2D26560E29FE816F00FB8517 /* SwiftKeychainWrapper */; };
+		2D26561129FE816F00FB8517 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2D26561029FE816F00FB8517 /* Realm */; };
+		2D26561329FE816F00FB8517 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2D26561229FE816F00FB8517 /* RealmSwift */; };
+		2D26561429FE817700FB8517 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEA14C829FD110E00E76FED /* HomeViewController.swift */; };
 		2D635E7329FC311100F4B49B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7229FC311100F4B49B /* AppDelegate.swift */; };
 		2D635E7529FC311100F4B49B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D635E7429FC311100F4B49B /* SceneDelegate.swift */; };
 		2D635E7C29FC311200F4B49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D635E7B29FC311200F4B49B /* Assets.xcassets */; };
@@ -393,6 +402,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D26560B29FE816700FB8517 /* RealmSwift in Frameworks */,
+				2D26560929FE816700FB8517 /* Realm in Frameworks */,
+				2D26560729FE816700FB8517 /* SwiftKeychainWrapper in Frameworks */,
+				2D26560529FE816700FB8517 /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +413,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D26561329FE816F00FB8517 /* RealmSwift in Frameworks */,
+				2D26561129FE816F00FB8517 /* Realm in Frameworks */,
+				2D26560F29FE816F00FB8517 /* SwiftKeychainWrapper in Frameworks */,
+				2D26560D29FE816F00FB8517 /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,6 +943,12 @@
 				2D635E8729FC311200F4B49B /* PBXTargetDependency */,
 			);
 			name = FooManagementTests;
+			packageProductDependencies = (
+				2D26560429FE816700FB8517 /* Reachability */,
+				2D26560629FE816700FB8517 /* SwiftKeychainWrapper */,
+				2D26560829FE816700FB8517 /* Realm */,
+				2D26560A29FE816700FB8517 /* RealmSwift */,
+			);
 			productName = FooManagementTests;
 			productReference = 2D635E8529FC311200F4B49B /* FooManagementTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -944,6 +967,12 @@
 				2D635E9129FC311200F4B49B /* PBXTargetDependency */,
 			);
 			name = FooManagementUITests;
+			packageProductDependencies = (
+				2D26560C29FE816F00FB8517 /* Reachability */,
+				2D26560E29FE816F00FB8517 /* SwiftKeychainWrapper */,
+				2D26561029FE816F00FB8517 /* Realm */,
+				2D26561229FE816F00FB8517 /* RealmSwift */,
+			);
 			productName = FooManagementUITests;
 			productReference = 2D635E8F29FC311200F4B49B /* FooManagementUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -1241,6 +1270,7 @@
 				2DEA152F29FD1FE600E76FED /* NibInstantiate.swift in Sources */,
 				2DEA146929FCF6B500E76FED /* ExampleAPI.swift in Sources */,
 				2DEA155529FD71EA00E76FED /* AddOrderWorker.swift in Sources */,
+				2D26561429FE817700FB8517 /* HomeViewController.swift in Sources */,
 				2DEA155A29FD85C100E76FED /* RemoveOrderWorker.swift in Sources */,
 				2D998DAC29FE3A08008FE4D0 /* OrderDetailsConfig.swift in Sources */,
 				2DEA143029FCEE5B00E76FED /* NetworkService.swift in Sources */,
@@ -2044,6 +2074,46 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2D26560429FE816700FB8517 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA13F529FCEC1600E76FED /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		2D26560629FE816700FB8517 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140529FCED2F00E76FED /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		2D26560829FE816700FB8517 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140829FCED5700E76FED /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2D26560A29FE816700FB8517 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140829FCED5700E76FED /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		2D26560C29FE816F00FB8517 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA13F529FCEC1600E76FED /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		2D26560E29FE816F00FB8517 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140529FCED2F00E76FED /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		2D26561029FE816F00FB8517 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140829FCED5700E76FED /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		2D26561229FE816F00FB8517 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DEA140829FCED5700E76FED /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		2DEA13F629FCEC1600E76FED /* Reachability */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2DEA13F529FCEC1600E76FED /* XCRemoteSwiftPackageReference "Reachability" */;
