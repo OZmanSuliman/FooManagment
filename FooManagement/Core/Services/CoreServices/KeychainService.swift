@@ -82,9 +82,9 @@ extension KeychainService: KeychainReading {
 
 private extension String {
 
-    static let accessToken = "access_token"
-    static let refreshToken = "refresh_token"
-    static let expiresTokenTime = "expires_token_time"
+    static let accessToken = Strings.access_token.fullString()
+    static let refreshToken = Strings.refresh_token.fullString()
+    static let expiresTokenTime = Strings.expires_token_time.fullString()
 }
 
 

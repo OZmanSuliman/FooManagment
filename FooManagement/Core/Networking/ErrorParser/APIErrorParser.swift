@@ -12,8 +12,8 @@ class APIErrorParser {
     // MARK: - Private -
 
     private func validationError(from json: [String: Any]) -> APIError? {
-        guard let status = json["status"] as? Int,
-              let errors = json["errors"] as? [String: [String]] else {
+        guard let status = json[Strings.status.fullString()] as? Int,
+              let errors = json[Strings.errors.fullString()] as? [String: [String]] else {
             return nil
         }
 
@@ -23,8 +23,8 @@ class APIErrorParser {
     }
 
     private func failure(from json: [String: Any]) -> APIError? {
-        guard let success = json["succeeded"] as? Bool,
-              let message = json["message"] as? String else {
+        guard let success = json[Strings.succeeded.fullString()] as? Bool,
+              let message = json[Strings.message.fullString()] as? String else {
             return nil
         }
 
@@ -32,7 +32,7 @@ class APIErrorParser {
     }
 
     private func exception(from json: [String: Any], statusCode: Int) -> APIError? {
-        guard let message = json["error"] as? String else { return nil }
+        guard let message = json[Strings.error.fullString()] as? String else { return nil }
 
         return BackendError(statusCode: statusCode, message: message, reason: .generic)
     }

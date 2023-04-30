@@ -44,7 +44,7 @@ internal extension UserDefaultInfo {
 
 enum UserDefaultsEnum {
     // MARK: - Authorization -
-    private static var lastUpdatedApiTokenTimeInfo = UserDefaultInfo(key: "lastUpdatedApiTokenTimeInfo", defaultValue: Date())
+    private static var lastUpdatedApiTokenTimeInfo = UserDefaultInfo(key: Strings.lastUpdatedApiTokenTimeInfo.fullString(), defaultValue: Date())
     static var lastUpdatedApiTokenTime: Date { // Date when the api tokens are saved/updated
         get { return lastUpdatedApiTokenTimeInfo.get() }
         set { lastUpdatedApiTokenTimeInfo.set(newValue) }
@@ -54,7 +54,7 @@ enum UserDefaultsEnum {
         return hasApiAccessToken
     }
 
-    private static var hasApiAccessTokenInfo = UserDefaultInfo(key: "hasApiAccessTokenInfo", defaultValue: false)
+    private static var hasApiAccessTokenInfo = UserDefaultInfo(key: Strings.hasApiAccessTokenInfo.fullString(), defaultValue: false)
     static var hasApiAccessToken: Bool {
         get { return hasApiAccessTokenInfo.get() }
         set { hasApiAccessTokenInfo.set(newValue) }

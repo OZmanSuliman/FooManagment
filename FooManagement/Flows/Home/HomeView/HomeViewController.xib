@@ -29,18 +29,18 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfa-Ic-lt2" customClass="AddOrderButtonView" customModule="FooManagement" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="127.66666666666669" width="393" height="128"/>
+                            <rect key="frame" x="0.0" y="127.66666666666669" width="393" height="85.333333333333314"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dn0-3q-rlf">
-                            <rect key="frame" x="0.0" y="255.66666666666669" width="393" height="596.33333333333326"/>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dn0-3q-rlf">
+                            <rect key="frame" x="0.0" y="213" width="393" height="639"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="dn0-3q-rlf" firstAttribute="height" secondItem="U9D-M9-wOy" secondAttribute="height" multiplier="0.7" id="SOo-vx-27d"/>
+                        <constraint firstItem="dn0-3q-rlf" firstAttribute="height" secondItem="U9D-M9-wOy" secondAttribute="height" multiplier="0.75" id="SOo-vx-27d"/>
                         <constraint firstItem="CKy-gc-v2c" firstAttribute="height" secondItem="U9D-M9-wOy" secondAttribute="height" multiplier="0.15" id="kCE-IW-u6v"/>
-                        <constraint firstItem="cfa-Ic-lt2" firstAttribute="height" secondItem="U9D-M9-wOy" secondAttribute="height" multiplier="0.15" id="qcL-Pu-sPf"/>
+                        <constraint firstItem="cfa-Ic-lt2" firstAttribute="height" secondItem="U9D-M9-wOy" secondAttribute="height" multiplier="0.1" id="qcL-Pu-sPf"/>
                     </constraints>
                 </stackView>
             </subviews>
