@@ -8,71 +8,55 @@ on:
 
 jobs:
   build:
-    name: Build
     env:
-      PROJECT: "FooManagement.xcodeproj"
-      SCHEME: "FooManagement-Dev"
-      DEVICE: "iPhone 14"
-      DERIVED_DATA_PATH: "DerivedData"
-    runs-on: macOS-latest
+     PROJECT: "FooManagement.xcodeproj"
+     SCHEME: "FooManagement-Dev"
+    runs-on: macos-latest
     steps:
-    - name: Checkout project
+    - name: Checkout code
       uses: actions/checkout@v2
-#     - name: Install CocoaPods
-#       run: |
-#         gem install cocoapods
-#         pod install
-    - name: Cancel Previous Runs
-      uses: styfle/cancel-workflow-action@0.9.1
+    - name: Setup Xcode
+      uses: actions/setup-xcode@v2
       with:
-        access_token: ${{ github.token }}
-
-    - name: Swift Packages Cache
-      uses: actions/cache@v2
-      id: cache
-      with:
-          path: |
-            Build/SourcePackages
-            Build/Build/Products
-          key: ${{ runner.os }}-deps-v1-${{ hashFiles('BILDsolid.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
-          restore-keys: ${{ runner.os }}-deps-v1-
+        xcode-version: '13.2'
     - name: Build
-      run: |
-        xcodebuild -project $PROJECT -scheme $SCHEME -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' build
-    - name: Upload products
+      run: xcodebuild -scheme $SCHEME -project $PROJECT -destination "platform=iOS Simulator,OS=15.2,name=iPhone 13" build
+    - name: Upload artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: Products
-        path: DerivedData/Build/Products
-        
-  test:
-    name: Test
-    runs-on: macOS-latest
+        name: BuildArtifacts
+        path: MyProject/build/Release-iphonesimulator/MyProject.app
+
+  unit_test:
+    env:
+     PROJECT: "FooManagement.xcodeproj"
+     SCHEME: "FooManagement-Dev"
+    needs: build
+    runs-on: macos-latest
+    if: success()
     steps:
-    - name: Checkout project
+    - name: Checkout code
       uses: actions/checkout@v2
-    - name: Restore Packages Cache
-      uses: actions/cache@v2
-      id: cache
+    - name: Setup Xcode
+      uses: actions/setup-xcode@v2
       with:
-          path: |
-            Build/SourcePackages
-            Build/Build/Products
-          key: ${{ runner.os }}-deps-v1-${{ hashFiles('BILDsolid.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
-          restore-keys: ${{ runner.os }}-deps-v1-
-    - name: Build for Testing
-      run: |
-        xcodebuild -project $PROJECT -scheme $SCHEME -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13' -derivedDataPath DerivedData -enableCodeCoverage YES build-for-testing
+        xcode-version: '13.2'
     - name: Run Unit Tests
-      run: |
-        xcodebuild -destination 'platform=iOS Simulator,name=iPhone 13' -derivedDataPath DerivedData -enableCodeCoverage YES -resultBundlePath test_results -testPlan UnitTests test
-      continue-on-error: true
-    - name: Run UI Tests
-      run: |
-        xcodebuild -destination 'platform=iOS Simulator,name=iPhone 13' -derivedDataPath DerivedData -enableCodeCoverage YES -resultBundlePath test_results -testPlan UITests test
-      continue-on-error: true
-    - name: Upload Test Results
-      uses: actions/upload-artifact@v2
+      run: xcodebuild -scheme $SCHEME -project $PROJECT -destination "platform=iOS Simulator,OS=15.2,name=iPhone 13" test -only-testing:MyProjectTests
+
+  ui_test:
+    env:
+     PROJECT: "FooManagement.xcodeproj"
+     SCHEME: "FooManagement-Dev"
+    needs: build
+    runs-on: macos-latest
+    if: success()
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Setup Xcode
+      uses: actions/setup-xcode@v2
       with:
-        name: Test Results
-        path: test_results
+        xcode-version: '13.2'
+    - name: Run UI Tests
+      run: xcodebuild -scheme $SCHEME -project $PROJECT -destination "platform=iOS Simulator,OS=15.2,name=iPhone 13" test -only-testing:MyProjectUITests
