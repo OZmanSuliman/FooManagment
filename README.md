@@ -1,6 +1,7 @@
 # FooManagment
 the name got selected because the word food has close pronunciation as Food
 and Foo is commonly used in developers examples as a variable name.
+The App is developed using XCode 14.2, Swift Swift 5.7, UIKit, and tested on iPhone 13, iOS 16.4.1.
 
 
 https://user-images.githubusercontent.com/39956261/235357404-16a2e17d-6f36-48e9-8db9-44d2fdfbd9f3.MP4
