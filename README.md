@@ -52,6 +52,7 @@ Due to some confilict on the time, the app was developed in less than 2 days, wh
 as mentioned above, the app is highly losed which makes is easy for tests as well.
 
 ## Design pattern
+These are examples for design patterns used in the app and not included to:
 ### Singleton
 example for its usage in the app: EnvironmentManager
 ### Factory
