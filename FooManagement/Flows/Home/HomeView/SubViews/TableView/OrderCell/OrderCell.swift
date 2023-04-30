@@ -14,7 +14,7 @@ class OrderCell: UITableViewCell {
     @IBOutlet weak var orderName: UILabel!
     @IBOutlet weak var orderDescription: UILabel!
     @IBOutlet weak var orderImage: UIImageView!
-    @IBOutlet weak var orderStatus: StatusView!
+    @IBOutlet weak var orderStatus: UIView!
 
     var order: Order?
     var delegate: OrderCellDelegate?
@@ -26,6 +26,19 @@ class OrderCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        orderName.text = ""
+        orderDescription.text = ""
+        orderImage.image = nil
+        for subview in orderStatus.subviews {
+            subview.removeFromSuperview()
+        }
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        for subview in orderStatus.subviews {
+            subview.frame = orderStatus.bounds
+        }
     }
     
     func setupCell(order: Order) {
@@ -37,10 +50,12 @@ class OrderCell: UITableViewCell {
         orderImage.layer.cornerRadius = 10.0
         orderImage.layer.masksToBounds = true
         guard let order else { return }
-        orderImage.image = UIImage(named: "Strawberry-Milkshake")
+        orderImage.image = UIImage(named: order.image)
         orderName.text = order.name
         orderDescription.text = order.desc
-        orderStatus.setupStatus(order.status)
-        orderStatus.statusTapHandler = { self.delegate?.changeStatus(order: order) }
+        let orderStatusView = StatusView.instanceFromNib()
+        orderStatusView.setupStatus(order.status)
+        orderStatusView.statusTapHandler = { self.delegate?.changeStatus(order: order) }
+        orderStatus.addSubview(orderStatusView)
     }
 }

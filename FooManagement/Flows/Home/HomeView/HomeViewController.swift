@@ -15,20 +15,20 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var headerView: HomeHeaderView!
     @IBOutlet weak var addOrderButton: AddOrderButtonView!
     @IBOutlet weak var ordersTableView: UITableView!
-
+    var config = HomeConfiguration()
     var interactor: HomeBusinessLogic?
     var orders: [Order] = []
+    var router: HomeRoutingLogic?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        self.interactor?.fetchOrders()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         setupViews()
-        self.interactor?.fetchOrders()
     }
     
     override func viewWillLayoutSubviews() {
@@ -73,28 +73,35 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         if self.orders.count <= 0 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: EmptyTableViewCell.identifierCell,
                                                            for: indexPath) as? EmptyTableViewCell else {
-                return UITableViewCell(style: .default, reuseIdentifier: "identifier")
+                return UITableViewCell(style: .default, reuseIdentifier: Strings.identifier.fullString())
             }
+            cell.selectionStyle = .none
             return cell
         }
         guard let cell = tableView.dequeueReusableCell(withIdentifier: OrderCell.identifierCell,
                                                        for: indexPath) as? OrderCell else {
-            return UITableViewCell(style: .default, reuseIdentifier: "identifier")
+            return UITableViewCell(style: .default, reuseIdentifier: Strings.identifier.fullString())
         }
         cell.setupCell(order: self.orders[indexPath.row])
         cell.delegate = self
+        cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completionHandler) in
+        let deleteAction = UIContextualAction(style: .destructive, title: Strings.Delete.fullString()) { (action, view, completionHandler) in
             self.interactor?.removeOrder(self.orders[indexPath.row])
             completionHandler(true)
         }
-        deleteAction.image = UIImage(systemName: "trash.fill")
+        deleteAction.image = UIImage(systemName: Strings.trash.fullString())
         return UISwipeActionsConfiguration(actions: [deleteAction])
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard orders.count > 0 else { return }
+        self.router?.navigateToDetails(order: orders[indexPath.row])
+        
+    }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = HomeTableViewHeaderView.instanceFromNib()
@@ -130,7 +137,7 @@ extension HomeViewController: AddOrderButtonDelegate {
     func addOrderHandler() {
         let randomDouble = Double.random(in: 0..<100)
         let randomDoubleWithThreeDigits = String(format: "%.2f", randomDouble)
-        let order = Order(name: "order #\(orders.count + 1)", desc: "order number \(orders.count + 1)", image: Strings.StrawberryMilkshake.fullString(), status: 0, price: randomDoubleWithThreeDigits)
+        let order = Order(name: "\(Strings.order.fullString())\(orders.count + 1)", desc: "\(Strings.orderNumber.fullString())\(orders.count + 1)", image: Strings.StrawberryMilkshake.fullString(), status: 0, price: "\(Strings.aed.fullString()) \(randomDoubleWithThreeDigits)")
         interactor?.addOrder(order)
     }
 }
